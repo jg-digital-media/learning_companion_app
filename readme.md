@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `23-09-2025 - 15:52`
+Last Updated: `23-09-2025 - 15:54`
 
 ## Sections
 
@@ -11,10 +11,11 @@ Last Updated: `23-09-2025 - 15:52`
 
 ## Tasks 
 
-+ Tasks `0` Completed `0`
++ Tasks `1` Completed `0`
 
+
++ `TODO:` - Finish Wireframe - concept for app 
 `COMPLETED: 00-00-0000` -
-`TODO:` - 
 
 [Back to Top](#learning-companion-app)
 
