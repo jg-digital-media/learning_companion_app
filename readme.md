@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `23-09-2025 - 15:36`
+Last Updated: `23-09-2025 - 15:52`
 
 ## Sections
 
@@ -124,6 +124,12 @@ Last Updated: `23-09-2025 - 15:36`
     + Node Creation, Random DOM Updates, Storage
   + **Theme/Layout:**	
     + Class Manipulation, Styling via JS, Storage
+
++ Learning App
+  + **Concept:** Flashcards (pre-determined), quizzes, visual progress tracker, motivational quotes
+  + **Strengths:** Fun & educational, interactive elements
+  + **DOM Features Used:** Traversal, event delegation, progress bar, localStorage
+
 
 
 [Back to Top](#learning-companion-app)
