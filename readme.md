@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `23-09-2025 - 15:54`
+Last Updated: `24-09-2025 - 15:05`
 
 ## Sections
 
@@ -11,15 +11,21 @@ Last Updated: `23-09-2025 - 15:54`
 
 ## Tasks 
 
-+ Tasks `1` Completed `0`
++ Tasks `4` Completed `0`
 
 
 + `TODO:` - Finish Wireframe - concept for app 
-`COMPLETED: 00-00-0000` -
+<!-- `COMPLETED: 00-00-0000` - -->
++ `TODO:` - Reset progress tracking on button click
++ `TODO:` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
++ `TODO:` - Estimate the size in bytes/megabytes if appropriate it'll take to stOre progress tracking in `.localStorage`. 
 
 [Back to Top](#learning-companion-app)
 
 ## Development
+
+### User flow notes
++ Cards will be pre-determined.  Users will be able to mark cards as completed and watch the progress bar update as they go..
 
 [Back to Top](#learning-companion-app)
 
