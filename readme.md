@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `24-09-2025 - 15:05`
+Last Updated: `25-09-2025 - 13:29`
 
 ## Sections
 
@@ -18,7 +18,7 @@ Last Updated: `24-09-2025 - 15:05`
 <!-- `COMPLETED: 00-00-0000` - -->
 + `TODO:` - Reset progress tracking on button click
 + `TODO:` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
-+ `TODO:` - Estimate the size in bytes/megabytes if appropriate it'll take to stOre progress tracking in `.localStorage`. 
++ `TODO:` - When ready, get an estimate the size in bytes/megabytes if appropriate it'll take to store progress tracking in `.localStorage`. 
 
 [Back to Top](#learning-companion-app)
 
