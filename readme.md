@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `25-09-2025 - 13:29`
+Last Updated: `16-10-2025 - 16:43`
 
 ## Sections
 
@@ -11,21 +11,29 @@ Last Updated: `25-09-2025 - 13:29`
 
 ## Tasks 
 
-+ Tasks `4` Completed `0`
-
++ Tasks `11` Completed `1`
 
 + `TODO:` - Finish Wireframe - concept for app 
-<!-- `COMPLETED: 00-00-0000` - -->
++ `COMPLETED: 16-10-2025` - Add a sample set of quotes for the app and store in JSON `data/daily_quotes/quotes.json`
++ `TODO:` - Build markup for the app
+    + `TODO:` - Build markup for app home screen `index.html`
+    + `TODO:` - Build markup for the flashcards `cards.html`
+    + `TODO:` - Build markup for the progress tracker `quiz.html`
+    + `TODO:` - Build markup for the checklist `checklists.html`
+    + `TODO:` - Build markup for the daily quote `motivation.html`
 + `TODO:` - Reset progress tracking on button click
 + `TODO:` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
 + `TODO:` - When ready, get an estimate the size in bytes/megabytes if appropriate it'll take to store progress tracking in `.localStorage`. 
+
 
 [Back to Top](#learning-companion-app)
 
 ## Development
 
 ### User flow notes
-+ Cards will be pre-determined.  Users will be able to mark cards as completed and watch the progress bar update as they go..
++ Cards will be pre-determined.  Users will be able to mark cards as completed and watch the progress bar update as they go.  That's the general idea of the app.
+
++ At the moment I'm at the Wireframe stage of the app. This will be followed by developing the building the HTML/PHP - the markup before prototyping with CSS and JavaScript.
 
 [Back to Top](#learning-companion-app)
 
@@ -40,9 +48,7 @@ Last Updated: `25-09-2025 - 13:29`
 
   + Persistence
 
-    + Save user’s styling preferences with `localStorage`
-
-  + Label Example: "Demonstrates: Styling via JavaScript, CSS Variables, Local Storage"
+    + Save user’s styling preferences with `localStorage`. WordPress does also provide out of the box support for backend database persistence.
 
 [Back to Top](#learning-companion-app)
 
