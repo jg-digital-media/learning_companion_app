@@ -1,1 +1,23 @@
-/* Last Update: 17-10-2025 10:36 */
+/* Last Update: 17-10-2025 11:57 */
+
+// Config Variables
+
+// TODO: Plan Font Stack
+
+// $font---main: "Times New Roman", Times, serif;
+$font---main--one: "Times New Roman", Times, serif;
+$font---main--two: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+$font---main--three: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font---main: $font---main--one;
+
+// Colour Variables
+$url---colour--footer: #7199ff;
+
+
+// Font Sizes
+$font---size--small: 14px;
+
+
+// Media Query Breakpoints
+$breakpoint---homepage--sm: 680px;
+
