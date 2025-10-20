@@ -12,7 +12,7 @@
         
         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </article>
 
-        <a href="#" class="" id="" title="Enter Website">Enter &gt;</a>
+        <a href="checklists.php" class="" id="js_enter---website" title="Enter Website">Enter &gt;</a>
 
     </main>
 
