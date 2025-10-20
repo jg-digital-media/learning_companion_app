@@ -1,4 +1,4 @@
-/* Last Update: 17-10-2025 11:57 */
+/* Last Update: 20-10-2025 16:15 */
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +35,49 @@ main article {
     width: 90%;
   }
 }
-main a {
+main.page, main.page---checklists {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  width: 120px;
+  background: #fd7575;
+  visibility: hidden;
+}
+main.page nav.navigation, main.page---checklists nav.navigation {
+  margin-top: 20pt;
+  transition: visibility 0.3s;
+}
+main.page nav div.close_menu, main.page---checklists nav div.close_menu {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  padding: 3px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+main.page nav div.close_menu:hover, main.page---checklists nav div.close_menu:hover {
+  background: #ff3333;
+}
+main.page nav div.close_menu .close_inner_container, main.page---checklists nav div.close_menu .close_inner_container {
+  color: white;
+}
+main.page nav .sub---navigation ul li, main.page---checklists nav .sub---navigation ul li {
+  line-height: 1.7;
+  margin: 4pt 0;
+}
+main.page nav .sub---navigation ul li a, main.page---checklists nav .sub---navigation ul li a {
+  color: green;
+  transition: color 0.3s;
+}
+main.page nav .sub---navigation ul li a:hover, main.page---checklists nav .sub---navigation ul li a:hover {
+  color: #025302;
+}
+main a#js_enter---website {
   display: block;
   border: solid 1px #8d8d8d;
   border-radius: 4px;
@@ -50,11 +92,11 @@ main a {
   transition: background 0.5s;
 }
 @media (max-width: 680px) {
-  main a {
+  main a#js_enter---website {
     width: 86%;
   }
 }
-main a:hover {
+main a#js_enter---website:hover {
   background: #7199ff;
 }
 
