@@ -44,7 +44,89 @@ main {
 
     }
 
-    a {
+    
+    // page specific - checklists templates
+    &.page,
+    &.page---checklists {
+
+        position: absolute;
+        top: 0;
+        width: auto;
+        height: 100%;
+        width: 120px;
+        background: #fd7575;
+        visibility: hidden;
+
+        nav {
+
+            &.navigation  {
+
+                margin-top: 20pt;                
+                transition: visibility .3s;
+            }
+
+
+            div.close_menu {
+
+                display: block;
+                margin: 0 auto;
+                width: 20px;
+                height: 20px;
+                background: red;
+                text-align: center;
+                border-radius: 50%;
+                padding: 3px;
+                transition: background .3s;
+
+
+
+                cursor: pointer;
+
+                &:hover {
+
+                    background: lighten(red, 10%);
+                }
+
+                .close_inner_container {
+
+                    color: white;
+                }
+
+            }
+
+            .sub---navigation {
+
+                ul {
+
+                    li {
+
+                        line-height: 1.7;
+                        margin: 4pt 0;
+
+                        a {
+
+                            color: green;
+                            transition: color .3s;
+
+                            &:hover {
+
+                                color: #025302;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            a {
+
+
+            }
+        }
+
+    }
+
+    a#js_enter---website {
 
         display: block;
         border: solid 1px #8d8d8d;
@@ -71,6 +153,7 @@ main {
         }
 
     }
+
 }
 
 footer {
