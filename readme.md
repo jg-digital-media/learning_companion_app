@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `17-10-2025 - 12:03`
+Last Updated: `20-10-2025 - 16:11`
 
 ## Sections
 
@@ -11,20 +11,23 @@ Last Updated: `17-10-2025 - 12:03`
 
 ## Tasks 
 
-+ Tasks `12` Completed `1`
++ Tasks `14` Completed `1`
 
-+ `TODO:` - Finish Wireframe - concept for app 
++ `TODO: ` - Finish Wireframe - concept for app 
 + `COMPLETED: 16-10-2025` - Add a sample set of quotes for the app and store in JSON `data/daily_quotes/quotes.json`
-+ `TODO:` - Build markup for the app
-    + `TODO:` - Build markup for app home screen `index.html`
-    + `TODO:` - Build markup for the flashcards `cards.html`
-    + `TODO:` - Build markup for the progress tracker `quiz.html`
-    + `TODO:` - Build markup for the checklist `checklists.html`
-    + `TODO:` - Build markup for the daily quote `motivation.html`
-+ `TODO:` - Plan Font Stack
-+ `TODO:` - Reset progress tracking on button click
-+ `TODO:` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
-+ `TODO:` - When ready, get an estimate the size in bytes/megabytes if appropriate it'll take to store progress tracking in `.localStorage`. 
++ `TODO: ` - Build markup for the app
+  + `TODO: ` - Finalise toggling of `.navigation` element visibility visibility
+    + `TODO: ` - Fade in or slide in?
+  + `TODO: ` - Build markup for app home screen `index.html`
+  + `TODO: ` - Build markup for the flashcards `cards.html`
+  + `TODO: ` - Build markup for the progress tracker `quiz.html`
+  + `TODO: ` - Build markup for the checklist `checklists.html`
+     
+  + `TODO: ` - Build markup for the daily quote `motivation.html`
++ `TODO: ` - Plan Font Stack
++ `TODO: ` - Reset progress tracking on button click
++ `TODO: ` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
++ `TODO: ` - When ready, get an estimate the size in bytes/megabytes if appropriate it'll take to store progress tracking in `.localStorage`. 
 
 
 [Back to Top](#learning-companion-app)
@@ -41,6 +44,8 @@ Last Updated: `17-10-2025 - 12:03`
 + At the moment I'm at the Wireframe stage of the app. This will be followed by developing the building the HTML/PHP - the markup before prototyping with CSS and JavaScript.
 
 + `17-10-2025` - Finished the wireframe and build the markup and styling for the homepage along with configuration variables - which will help me when finalising the final fonts; colours and other things.  I've added template files for each page type in the prototype. Evemtually these will be replaced as PHP Templates.
+
++ `20-10-2025` - I've added a rudimentary navigation menu to one of the page templates that toggles visibility at the click of a button. As it stands, it's functionally there, but the fade effect isn't quite transitioning correctly, where we've got a delay in the child elements fading out.  It's been logged as a visual bug.
 
 [Back to Top](#learning-companion-app)
 
