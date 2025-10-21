@@ -2,14 +2,14 @@
     
     <header>
 
-        <h1>JGDM: Learning Companion App (Prototype directory)</h1>
+        <h1>Tech Learning Companion App</h1>
 
         <span>By Jonnie Grieve Digital Media</span>
 
     </header>
 
     
-        <span onclick="openNav()">&#9776;</span>
+    <span onclick="openNav()">&#9776;</span>
 
     <main class="page page---checklists" onClick="closeNav()">        
 
