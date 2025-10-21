@@ -11,7 +11,7 @@
 
     <main class="page page---checklists">
 
-        <span id="open_page_menu" onclick="openNav()">&#9776;</span>
+        <!-- <span id="open_page_menu" onclick="openNav()">&#9776;</span> -->
 
         <nav class="navigation main---nav">
 
@@ -34,6 +34,20 @@
             </div>
 
         </nav>
+
+        <section class="site---search--container">
+
+            <!--- ham menu icon --->
+            <span id="open_page_menu" onclick="openNav()">&#9776;</span>
+            <!-- <label class="site---search--label" for="search">Search</label> -->
+
+            <aside class="search">
+                <input type="text" id="search_text_input" class="site---search--input" placeholder="Search...">
+                <a href="#" id="btn---search" class="site---search--button"><span>&#x1F50E;</span> Search</a>
+                <div class="site---search--results"></div>
+            </aside>
+
+        </section>
 
         <section class="site---topic--navigation_container">
             
@@ -61,7 +75,7 @@
 
             <article class="progress---checklist--container">
 
-                <h2>HTML</h2>
+                <!-- <h2>HTML</h2> -->
 
                 <ul>
 
