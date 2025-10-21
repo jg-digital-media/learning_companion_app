@@ -110,18 +110,18 @@ body {
 
                 nav {
 
-                    visibility: hidden;
-                    opacity: 0;
-
                     &.navigation  {
 
                         /* margin-top: 20pt;  */               
                         transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
                         top: 0;
+                        visibility: hidden;
+                        opacity: 0;
                         width: auto;
                         height: 100%;
                         width: 120px;
                         background: $background---colour--mobileNav;
+
                     
                         /* border-right: #7199ff solid 3px; */
                         border-right: #720303 solid 3px;
@@ -197,6 +197,29 @@ body {
                     a {
 
 
+                    }
+                }
+
+                section.site---topic--navigation_container {
+
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+
+                    .site---topic--navigation {
+
+                        
+
+                        ul {
+
+                            li {
+
+                                a {
+
+
+                                }
+                            }
+                        }
                     }
                 }
 
