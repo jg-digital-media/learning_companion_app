@@ -4,12 +4,17 @@
     margin: 0;
 }
 
+// Website Hooter
 header {
 
     text-align: center;
+    position: relative;
     /* margin: 20pt; */
     padding: 20pt;
-    background: none;
+    /* font-size: $font---size--h1; */
+    /* background: none; */
+    background: $background---col--header;
+    box-shadow: $background---col--header -2px 0px 15px 0px;
 
     span {
 
@@ -18,178 +23,202 @@ header {
     }
 }
 
-
 body {
 
     font-family: $font---main;
-}
+    background: $background---body;
 
-main {
+    &.page---home {
 
-    width: 100%;
-    /* max-width: 1000px; */
+        main {
 
-    article {
-
-        display: block;
-        margin: 48pt auto 0 auto;
-        line-height: 1.5;
-        width: 37%;
-        font-size: 22pt;
-
-        @media (max-width: $breakpoint---homepage--sm) {
-
-            width: 90%;
-        }
-
-    }
-
-
-    &.page {
-
-    }
-    
-    // page specific - checklists templates
-    &.page---checklists {
-
-        #open_page_menu {
-
-            display: block;
-            color: #2e2e2e;
-            font-size: 24px;
-            padding: 10px;
-            cursor: pointer;
-            transition: color .3s;
-
-            &:hover {
-
-                color: #720303;
-            }
-        }
-
-        nav {
-
-            visibility: hidden;
-            opacity: 0;
-
-            &.navigation  {
-
-                /* margin-top: 20pt;  */               
-                transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
-                top: 0;
-                width: auto;
-                height: 100%;
-                width: 120px;
-                /* background: #272727; */
-                background: $background---colour--mobileNav;
-            
-                /* border-right: #7199ff solid 3px; */
-                border-right: #720303 solid 3px;
-            }
-
-            div.close_menu {
+            article {
 
                 display: block;
-                margin: 10px auto;
-                width: 20px;
-                height: 20px;
-                background: red;
+                margin: 50pt auto 0 auto;
+                line-height: 1.5;
+                width: 37%;
+                font-size: $font---size--xlarge;
                 text-align: center;
-                border-radius: 50%;
-                padding: 3px;
-                transition: background .3s;
 
-                cursor: pointer;
+                @media (max-width: $breakpoint---homepage--sm) {
+
+                    width: 90%;
+                }
+
+            }
+            
+            a#js_enter---website {
+
+                display: block;
+                background: none;
+                color: black;
+                border: solid 1px #8d8d8d;
+                border-radius: 4px;
+                margin: 25px auto;
+                font-weight: bold;
+                font-size: $font---size--medium;
+                /* width: 100%; */
+                width: 60px;
+                text-decoration: none;
+                text-align: center;
+                padding: 6px;
+
+                transition: background .5s;
+
+                @media (max-width: $breakpoint---homepage--sm) {
+
+                    width: 86%;
+                }
 
                 &:hover {
 
-                    background: lighten(red, 10%);
+                    background: #7199ff;
                 }
 
-                .close_inner_container {
+            }
 
-                    position: relative;
-                    top: 2px;
-                    color: white;
-                    font-family: arial;
-                    font-weight: bold;
+        }
 
+    }
+
+    &.page---progress--checklists {
+
+        main {
+
+            width: 100%;
+            /* max-width: 1000px; */
+            background: $background---body; 
+
+            &.page {
+
+                // hamburger menu icon
+                #open_page_menu {
+
+                    display: block;
+                    color: #2e2e2e;
+                    font-size: 24px;
+                    padding: 10px;
+                    cursor: pointer;
                     transition: color .3s;
 
                     &:hover {
 
-                        color: #323030;
+                        color: #720303;
                     }
                 }
 
-            }
+                nav {
 
-            .sub---navigation {
+                    visibility: hidden;
+                    opacity: 0;
 
-                ul {
+                    &.navigation  {
 
-                    list-style: none;
+                        /* margin-top: 20pt;  */               
+                        transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
+                        top: 0;
+                        width: auto;
+                        height: 100%;
+                        width: 120px;
+                        background: $background---colour--mobileNav;
+                    
+                        /* border-right: #7199ff solid 3px; */
+                        border-right: #720303 solid 3px;
+                    }
 
-                    li {
+                    // icon to close main menu
+                    div.close_menu {
 
-                        line-height: 2.1;
-                        margin: 4pt 0;
-                        padding: 0 3px;
+                        display: block;
+                        margin: 10px auto;
+                        width: 20px;
+                        height: 20px;
+                        background: red;
+                        text-align: center;
+                        border-radius: 50%;
+                        padding: 3px;
+                        transition: background .3s;
 
-                        a {
+                        cursor: pointer;
 
+                        &:hover {
+
+                            background: lighten(red, 10%);
+                        }
+
+                        .close_inner_container {
+
+                            position: relative;
+                            top: 2px;
                             color: white;
-                            text-decoration: none;
+                            font-family: arial;
+                            font-weight: bold;
+
                             transition: color .3s;
 
                             &:hover {
 
-                                color: lightblue;
+                                color: #323030;
                             }
                         }
+
+                    }
+
+                    // main toggled navigation menu styles
+                    .sub---navigation {
+
+                        ul {
+
+                            list-style: none;
+
+                            li {
+
+                                line-height: 2.1;
+                                margin: 4pt 0;
+                                padding: 0 3px;
+
+                                a {
+
+                                    color: white;
+                                    text-decoration: none;
+                                    transition: color .3s;
+
+                                    &:hover {
+
+                                        color: lightblue;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    a {
+
+
                     }
                 }
 
             }
+    
+            // page specific - checklists templates
+            &.page---checklists {
 
-            a {
-
+            
 
             }
-        }
 
-    }
+    }   
 
-    a#js_enter---website {
 
-        display: block;
-        border: solid 1px #8d8d8d;
-        border-radius: 4px;
-        margin: 10px auto;
-        font-weight: bold;
-        width: 100%;
-        width: 60px;
-        color: black;
-        text-decoration: none;
-        text-align: center;
-        padding: 6px;
-
-        transition: background .5s;
-
-        @media (max-width: $breakpoint---homepage--sm) {
-
-            width: 86%;
-        }
-
-        &:hover {
-
-            background: #7199ff;
-        }
+        
 
     }
 
 }
 
+// Website Footer
 footer {
 
     display: block;
@@ -210,4 +239,3 @@ footer {
         }
     }
 }
-
