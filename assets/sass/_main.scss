@@ -97,7 +97,7 @@ body {
 
                     display: block;
                     color: #2e2e2e;
-                    font-size: 24px;
+                    font-size: 28px;
                     padding: 10px;
                     cursor: pointer;
                     transition: color .3s;
@@ -106,6 +106,13 @@ body {
 
                         color: #720303;
                     }
+                }
+
+                .search {
+
+                    vertical-align: middle;
+                    align-content: center;
+                    flex-wrap: wrap;
                 }
 
                 nav {
@@ -200,6 +207,52 @@ body {
                     }
                 }
 
+                section.site---search--container {
+
+                    text-align: right;
+                    width: 95%;
+                    /* border: solid 1px #8d8d8d; */
+                    margin: 10px auto;
+                    /* height: 37px; */
+                    /* display: inline-block; */
+                    display: flex;
+                    vertical-align: middle;
+                    justify-content: space-between;
+
+                    #search_text_input {
+
+                        padding: 4px;
+                        border-radius: 6px;
+                        border: #440404 solid 1px;
+                        margin: 5px auto;
+                        vertical-align: middle;
+                    }
+
+                    #btn---search {
+
+                        color: black;
+                        display: inline-block;
+                        text-align: center;
+                        /* padding: 0 12px; */
+                        padding: 3px;
+                        margin: 5px;
+                        border-radius: 6px;
+                        border: solid 1px gray;
+                        text-decoration: none;
+                        font-size: 12px;
+                        vertical-align: middle;
+                        transition: scale 0.3s;
+
+                        transition: scale .3s;
+
+                        > span {
+
+                            transform: scale(1.3);
+
+                        }
+                    }
+                }
+
                 section.site---topic--navigation_container {
 
                     display: flex;
@@ -243,11 +296,19 @@ body {
 
                             li {
 
-                                line-height: 1.8;
+                                line-height: 2.3;
                                 list-style: none;
 
                                 a {
 
+                                    color: #690e0e;
+
+                                    transition: color .3s;
+
+                                    &:hover {
+
+                                        color: #0d56aa;
+                                    }
 
                                 }
                             }
@@ -343,7 +404,7 @@ footer {
 
     display: block;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 18px;
     text-align: center;
     font-size: $font---size--small;
 
