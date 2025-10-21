@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `20-10-2025 - 16:11`
+Last Updated: `21-10-2025 - 16:24`
 
 ## Sections
 
@@ -11,11 +11,12 @@ Last Updated: `20-10-2025 - 16:11`
 
 ## Tasks 
 
-+ Tasks `14` Completed `1`
++ Tasks `15` Completed `1`
 
 + `TODO: ` - Finish Wireframe - concept for app 
 + `COMPLETED: 16-10-2025` - Add a sample set of quotes for the app and store in JSON `data/daily_quotes/quotes.json`
 + `TODO: ` - Build markup for the app
++ `TODO: ` - Image to go with website title in main header
   + `TODO: ` - Finalise toggling of `.navigation` element visibility visibility
     + `TODO: ` - Fade in or slide in?
   + `TODO: ` - Build markup for app home screen `index.html`
@@ -35,7 +36,7 @@ Last Updated: `20-10-2025 - 16:11`
 
 # User Flow Notes
 
-+ Cards will be pre-determined.  Users will be able to mark cards as completed and watch the progress bar update as they go.  That's the general idea of the app.
++ Cards will be pre-determined. Users will be able to mark cards as completed and watch the progress bar update as they go. That's the general idea of the app.
 
 [Back to Top](#learning-companion-app)
 
@@ -43,9 +44,21 @@ Last Updated: `20-10-2025 - 16:11`
 
 + At the moment I'm at the Wireframe stage of the app. This will be followed by developing the building the HTML/PHP - the markup before prototyping with CSS and JavaScript.
 
-+ `17-10-2025` - Finished the wireframe and build the markup and styling for the homepage along with configuration variables - which will help me when finalising the final fonts; colours and other things.  I've added template files for each page type in the prototype. Evemtually these will be replaced as PHP Templates.
+### `17-10-2025`
 
-+ `20-10-2025` - I've added a rudimentary navigation menu to one of the page templates that toggles visibility at the click of a button. As it stands, it's functionally there, but the fade effect isn't quite transitioning correctly, where we've got a delay in the child elements fading out.  It's been logged as a visual bug.
++ Finished the wireframe and build the markup and styling for the homepage along with configuration variables - which will help me when finalising the final fonts; colours and other things.  I've added template files for each page type in the prototype. Evemtually these will be replaced as PHP Templates.
+
+### `20-10-2025` 
+
++  I've added a rudimentary navigation menu to one of the page templates that toggles visibility at the click of a button. As it stands, it's functionally there, but the fade effect isn't quite transitioning correctly, where we've got a delay in the child elements fading out.  It's been logged as a visual bug.
+
+### `21-10-2025`
+
++ Once I got the mobile menu working, there were 2 main things I wanted to concentrate on. First, there are 2 distinct page designs. The homepage, the progress checklist page, which needed some attention and some colour, making sure there was distinct selectors between the 2 designs - meaning one change never overrides another on either page.  
+
++ By the end of the day, I got as far as recreating the UI as far as the wireframe goes, with the hamburger menu and search bar side by side. Which was ably placed using Flexbox.  It feels like I got a lot sorted out and barely anything sorted out at the same time.  The question is, do I carry on with the same approach for the rest of the UI or meticulously sort out the CSS before moving on?
+
++ I think I'll build the rest of the markup as that will help me make better decisions about selectors in my CSS. 
 
 [Back to Top](#learning-companion-app)
 
