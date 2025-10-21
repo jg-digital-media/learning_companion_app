@@ -6,16 +6,15 @@
 
         <span>By Jonnie Grieve Digital Media</span>
 
-    </header>
+    </header>   
 
-    
-    <span onclick="openNav()">&#9776;</span>
+    <main class="page page---checklists">
 
-    <main class="page page---checklists" onClick="closeNav()">        
+        <span id="open_page_menu" onclick="openNav()">&#9776;</span>
 
         <nav class="navigation main---nav">
 
-            <div class="close_menu" role="close-menu">
+            <div class="close_menu" role="close-menu" onclick="closeNav()">
                 <div class="close_inner_container">
                 X
                 </div>
@@ -36,6 +35,7 @@
         </nav>
 
     </main>
+
     
     <p>checklists.php</p>    
 

@@ -52,30 +52,45 @@ main {
     // page specific - checklists templates
     &.page---checklists {
 
-        position: absolute;
-        top: 0;
-        width: auto;
-        height: 100%;
-        width: 120px;
-        /* background: #272727; */
-        background: $background---colour--mobileNav;
-        visibility: hidden;
-        /* border-right: #7199ff solid 3px; */
-        border-right: white solid 3px;
+        #open_page_menu {
+
+            display: block;
+            color: #2e2e2e;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            transition: color .3s;
+
+            &:hover {
+
+                color: #720303;
+            }
+        }
 
         nav {
 
+            visibility: hidden;
+            opacity: 0;
+
             &.navigation  {
 
-                margin-top: 20pt;                
-                transition: visibility .3s;
+                /* margin-top: 20pt;  */               
+                transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
+                top: 0;
+                width: auto;
+                height: 100%;
+                width: 120px;
+                /* background: #272727; */
+                background: $background---colour--mobileNav;
+            
+                /* border-right: #7199ff solid 3px; */
+                border-right: #720303 solid 3px;
             }
-
 
             div.close_menu {
 
                 display: block;
-                margin: 0 auto;
+                margin: 10px auto;
                 width: 20px;
                 height: 20px;
                 background: red;
@@ -93,7 +108,18 @@ main {
 
                 .close_inner_container {
 
+                    position: relative;
+                    top: 2px;
                     color: white;
+                    font-family: arial;
+                    font-weight: bold;
+
+                    transition: color .3s;
+
+                    &:hover {
+
+                        color: #323030;
+                    }
                 }
 
             }
@@ -101,6 +127,8 @@ main {
             .sub---navigation {
 
                 ul {
+
+                    list-style: none;
 
                     li {
 
@@ -111,6 +139,7 @@ main {
                         a {
 
                             color: white;
+                            text-decoration: none;
                             transition: color .3s;
 
                             &:hover {
