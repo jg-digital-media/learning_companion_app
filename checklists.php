@@ -1,5 +1,6 @@
 <?php include "assets/template-parts/header.php"; ?>
     
+<body class="page page---progress--checklists">
     <header>
 
         <h1>Tech Learning Companion App</h1>
@@ -37,6 +38,6 @@
     </main>
 
     
-    <p>checklists.php</p>    
+    <!-- <p>checklists.php</p>  -->   
 
 <?php include "assets/template-parts/footer.php"; ?>

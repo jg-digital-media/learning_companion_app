@@ -1,4 +1,4 @@
-<?php echo "header.php"; ?>
+<?php // echo "header.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,4 +10,3 @@
 
     <title>Tech Learning Companion App | Jonnie Grieve Digital Media</title>
 </head>
-<body>

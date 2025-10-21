@@ -1,4 +1,6 @@
 <?php include "assets/template-parts/header.php"; ?>
+
+<body class="page page---home">
     
     <header>
 
