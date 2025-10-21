@@ -44,9 +44,12 @@ main {
 
     }
 
+
+    &.page {
+
+    }
     
     // page specific - checklists templates
-    &.page,
     &.page---checklists {
 
         position: absolute;
@@ -54,8 +57,11 @@ main {
         width: auto;
         height: 100%;
         width: 120px;
-        background: #fd7575;
+        /* background: #272727; */
+        background: $background---colour--mobileNav;
         visibility: hidden;
+        /* border-right: #7199ff solid 3px; */
+        border-right: white solid 3px;
 
         nav {
 
@@ -78,8 +84,6 @@ main {
                 padding: 3px;
                 transition: background .3s;
 
-
-
                 cursor: pointer;
 
                 &:hover {
@@ -100,17 +104,18 @@ main {
 
                     li {
 
-                        line-height: 1.7;
+                        line-height: 2.1;
                         margin: 4pt 0;
+                        padding: 0 3px;
 
                         a {
 
-                            color: green;
+                            color: white;
                             transition: color .3s;
 
                             &:hover {
 
-                                color: #025302;
+                                color: lightblue;
                             }
                         }
                     }
