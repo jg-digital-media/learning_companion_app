@@ -1,4 +1,4 @@
-/* Last Update: 21-10-2025 13:20 */
+/* Last Update: 22-10-2025 13:05 */
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +22,198 @@ header span {
 body {
   font-family: "Times New Roman", Times, serif;
   background: lightblue;
+}
+body main.page #open_page_menu {
+  display: block;
+  color: #2e2e2e;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+body main.page #open_page_menu:hover {
+  color: #720303;
+}
+body main.page nav.navigation {
+  /* margin-top: 20pt;  */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  width: auto;
+  height: 100%;
+  width: 120px;
+  background: #272727;
+  /* border-right: #7199ff solid 3px; */
+  border-right: #720303 solid 3px;
+}
+body main.page nav div.close_menu {
+  display: block;
+  margin: 10px auto;
+  width: 20px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  padding: 3px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+body main.page nav div.close_menu:hover {
+  background: #ff3333;
+}
+body main.page nav div.close_menu .close_inner_container {
+  position: relative;
+  top: 2px;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+body main.page nav div.close_menu .close_inner_container:hover {
+  color: #323030;
+}
+body main.page nav .sub---navigation ul {
+  list-style: none;
+}
+body main.page nav .sub---navigation ul li {
+  line-height: 2.1;
+  margin: 4pt 0;
+  padding: 0 3px;
+}
+body main.page nav .sub---navigation ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body main.page nav .sub---navigation ul li a:hover {
+  color: lightblue;
+}
+body main.page .search {
+  vertical-align: middle;
+  align-content: center;
+  flex-wrap: wrap;
+}
+body main.page section.site---search--container {
+  text-align: right;
+  width: 95%;
+  /* border: solid 1px #8d8d8d; */
+  margin: 10px auto;
+  /* height: 37px; */
+  /* display: inline-block; */
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+body main.page section.site---search--container #search_text_input {
+  padding: 4px;
+  border-radius: 6px;
+  border: #440404 solid 1px;
+  margin: 5px auto;
+  vertical-align: middle;
+}
+body main.page section.site---search--container #btn---search {
+  color: black;
+  display: inline-block;
+  text-align: center;
+  /* padding: 0 12px; */
+  padding: 3px;
+  margin: 5px;
+  border-radius: 6px;
+  border: solid 1px gray;
+  text-decoration: none;
+  font-size: 12px;
+  vertical-align: middle;
+  transition: scale 0.3s;
+  transition: scale 0.3s;
+}
+body main.page section.site---search--container #btn---search > span {
+  transform: scale(1.3);
+}
+body main.page section.site---topic--navigation_container {
+  display: flex;
+  /* visibility: visible; */
+  /* opacity: 1; */
+  width: 95%;
+  margin: 0 auto;
+}
+body main.page section.site---topic--navigation_container h2 {
+  text-align: center;
+}
+body main.page section.site---topic--navigation_container article {
+  padding: 2px;
+  border-radius: 6px;
+  background: #bddfeb;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  /* ul {
+
+      padding: 2px;
+      border-radius: 6px;
+      background: lighten(lightblue, 4%);
+      margin: 0 auto;
+      text-align: center;
+  } */
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation {
+  width: 30%;
+  /* border: solid 1px #8d8d8d; */
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation ul {
+  padding: 2px;
+  border-radius: 6px;
+  background: #bddfeb;
+  margin: 0 15px;
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation ul li {
+  line-height: 2.3;
+  list-style: none;
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation ul li a {
+  color: #690e0e;
+  transition: color 0.3s;
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation ul li a:hover {
+  color: #0d56aa;
+}
+body main.page section.site---topic--navigation_container .progress---checklist--container {
+  /* width: 50%; */
+  /* width: 690px; */
+  /* border: solid 1px #8d8d8d;  */
+}
+body main.page section.site---topic--navigation_container .progress---checklist--container ul li {
+  list-style: none;
+  /* width: 120px; */
+  /* width: 140px; */
+  width: 25%;
+  width: auto;
+  display: inline-block;
+  /* height: 63px; */
+  margin: 0 6px;
+}
+body main.page section.site---topic--navigation_container .progress---checklist--container ul li span img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin: 16px auto;
+}
+body main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item {
+  text-align: center;
+  margin: 6px 0;
+  display: flex;
+  /* align-items: self-start; */
+  justify-content: space-between;
+}
+body main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item .progress---checklist--icon.icon---incomplete {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  /* border: solid 1px #ffffff; */
 }
 body.page---home main article {
   display: block;
@@ -65,187 +257,8 @@ body.page---progress--checklists main {
   /* max-width: 1000px; */
   background: lightblue;
 }
-body.page---progress--checklists main.page #open_page_menu {
-  display: block;
-  color: #2e2e2e;
-  font-size: 28px;
-  padding: 10px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-body.page---progress--checklists main.page #open_page_menu:hover {
-  color: #720303;
-}
-body.page---progress--checklists main.page .search {
-  vertical-align: middle;
-  align-content: center;
-  flex-wrap: wrap;
-}
-body.page---progress--checklists main.page nav.navigation {
-  /* margin-top: 20pt;  */
-  transition: opacity 0.3s ease-in-out, visibility 0.3s;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-  width: auto;
-  height: 100%;
-  width: 120px;
-  background: #272727;
-  /* border-right: #7199ff solid 3px; */
-  border-right: #720303 solid 3px;
-}
-body.page---progress--checklists main.page nav div.close_menu {
-  display: block;
-  margin: 10px auto;
-  width: 20px;
-  height: 20px;
-  background: red;
-  text-align: center;
-  border-radius: 50%;
-  padding: 3px;
-  transition: background 0.3s;
-  cursor: pointer;
-}
-body.page---progress--checklists main.page nav div.close_menu:hover {
-  background: #ff3333;
-}
-body.page---progress--checklists main.page nav div.close_menu .close_inner_container {
-  position: relative;
-  top: 2px;
-  color: white;
-  font-family: arial;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-body.page---progress--checklists main.page nav div.close_menu .close_inner_container:hover {
-  color: #323030;
-}
-body.page---progress--checklists main.page nav .sub---navigation ul {
-  list-style: none;
-}
-body.page---progress--checklists main.page nav .sub---navigation ul li {
-  line-height: 2.1;
-  margin: 4pt 0;
-  padding: 0 3px;
-}
-body.page---progress--checklists main.page nav .sub---navigation ul li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-body.page---progress--checklists main.page nav .sub---navigation ul li a:hover {
-  color: lightblue;
-}
-body.page---progress--checklists main.page section.site---search--container {
-  text-align: right;
-  width: 95%;
-  /* border: solid 1px #8d8d8d; */
-  margin: 10px auto;
-  /* height: 37px; */
-  /* display: inline-block; */
-  display: flex;
-  vertical-align: middle;
-  justify-content: space-between;
-}
-body.page---progress--checklists main.page section.site---search--container #search_text_input {
-  padding: 4px;
-  border-radius: 6px;
-  border: #440404 solid 1px;
-  margin: 5px auto;
-  vertical-align: middle;
-}
-body.page---progress--checklists main.page section.site---search--container #btn---search {
-  color: black;
-  display: inline-block;
-  text-align: center;
-  /* padding: 0 12px; */
-  padding: 3px;
-  margin: 5px;
-  border-radius: 6px;
-  border: solid 1px gray;
-  text-decoration: none;
-  font-size: 12px;
-  vertical-align: middle;
-  transition: scale 0.3s;
-  transition: scale 0.3s;
-}
-body.page---progress--checklists main.page section.site---search--container #btn---search > span {
-  transform: scale(1.3);
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container {
-  display: flex;
-  /* visibility: visible; */
-  /* opacity: 1; */
-  width: 95%;
-  margin: 0 auto;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container h2 {
-  text-align: center;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container article ul {
-  padding: 2px;
-  border-radius: 6px;
-  background: #bddfeb;
-  margin: 0 auto;
-  text-align: center;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .site---topic--navigation {
-  width: 30%;
-  /* border: solid 1px #8d8d8d; */
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .site---topic--navigation ul {
-  padding: 2px;
-  border-radius: 6px;
-  background: #bddfeb;
-  margin: 0 15px;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .site---topic--navigation ul li {
-  line-height: 2.3;
-  list-style: none;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .site---topic--navigation ul li a {
-  color: #690e0e;
-  transition: color 0.3s;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .site---topic--navigation ul li a:hover {
-  color: #0d56aa;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .progress---checklist--container {
-  /* width: 50%; */
-  width: 690px;
-  /* border: solid 1px #8d8d8d;  */
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .progress---checklist--container ul li {
-  list-style: none;
-  /* width: 120px; */
-  /* width: 140px; */
-  width: auto;
-  display: inline-block;
-  /* height: 63px; */
-  margin: 0 6px;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .progress---checklist--container ul li span img {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-  margin: 16px auto;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item {
-  text-align: center;
-  margin: 6px 0;
-  display: flex;
-  /* align-items: self-start; */
-  justify-content: space-between;
-}
-body.page---progress--checklists main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item .progress---checklist--icon.icon---incomplete {
-  display: inline-block;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background: red;
-  text-align: center;
-  /* border: solid 1px #ffffff; */
+body.page---flashcards {
+  color: red;
 }
 footer {
   display: block;
