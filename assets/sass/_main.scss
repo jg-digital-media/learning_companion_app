@@ -28,6 +28,312 @@ body {
     font-family: $font---main;
     background: $background---body;
 
+    // for main navigation
+
+    main {
+
+        &.page {
+            
+            // hamburger menu icon
+            #open_page_menu {
+
+                display: block;
+                color: #2e2e2e;
+                font-size: 28px;
+                padding: 10px;
+                cursor: pointer;
+                transition: color .3s;
+
+                &:hover {
+
+                    color: #720303;
+                }
+            }
+
+            nav {
+
+                &.navigation  {
+
+                    /* margin-top: 20pt;  */               
+                    transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
+                    top: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    width: auto;
+                    height: 100%;
+                    width: 120px;
+                    background: $background---colour--mobileNav;
+
+                
+                    /* border-right: #7199ff solid 3px; */
+                    border-right: #720303 solid 3px;
+                }
+
+                // icon to close main menu
+                div.close_menu {
+
+                    display: block;
+                    margin: 10px auto;
+                    width: 20px;
+                    height: 20px;
+                    background: red;
+                    text-align: center;
+                    border-radius: 50%;
+                    padding: 3px;
+                    transition: background .3s;
+
+                    cursor: pointer;
+
+                    &:hover {
+
+                        background: lighten(red, 10%);
+                    }
+
+                    .close_inner_container {
+
+                        position: relative;
+                        top: 2px;
+                        color: white;
+                        font-family: arial;
+                        font-weight: bold;
+
+                        transition: color .3s;
+
+                        &:hover {
+
+                            color: #323030;
+                        }
+                    }
+
+                }
+
+                // main toggled navigation menu styles
+                .sub---navigation {
+
+                    ul {
+
+                        list-style: none;
+
+                        li {
+
+                            line-height: 2.1;
+                            margin: 4pt 0;
+                            padding: 0 3px;
+
+                            a {
+
+                                color: white;
+                                text-decoration: none;
+                                transition: color .3s;
+
+                                &:hover {
+
+                                    color: lightblue;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                a {
+
+
+                }
+            }
+
+            .search {
+
+                vertical-align: middle;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+
+            section.site---search--container {
+
+                text-align: right;
+                width: 95%;
+                /* border: solid 1px #8d8d8d; */
+                margin: 10px auto;
+                /* height: 37px; */
+                /* display: inline-block; */
+                display: flex;
+                vertical-align: middle;
+                justify-content: space-between;
+
+                #search_text_input {
+
+                    padding: 4px;
+                    border-radius: 6px;
+                    border: #440404 solid 1px;
+                    margin: 5px auto;
+                    vertical-align: middle;
+                }
+
+                #btn---search {
+
+                    color: black;
+                    display: inline-block;
+                    text-align: center;
+                    /* padding: 0 12px; */
+                    padding: 3px;
+                    margin: 5px;
+                    border-radius: 6px;
+                    border: solid 1px gray;
+                    text-decoration: none;
+                    font-size: 12px;
+                    vertical-align: middle;
+                    transition: scale 0.3s;
+
+                    transition: scale .3s;
+
+                    > span {
+
+                        transform: scale(1.3);
+
+                    }
+                }
+            }
+
+            section.site---topic--navigation_container {
+
+                display: flex;
+                /* visibility: visible; */
+                /* opacity: 1; */
+                width: 95%;
+                margin: 0 auto;
+
+                h2 {
+                    
+
+                    text-align: center;
+                }
+
+                article {
+
+                    padding: 2px;
+                    border-radius: 6px;
+                    background: lighten(lightblue, 4%);
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+
+                    /* ul {
+
+                        padding: 2px;
+                        border-radius: 6px;
+                        background: lighten(lightblue, 4%);
+                        margin: 0 auto;
+                        text-align: center;
+                    } */
+
+
+                }
+
+                // TODO: Topic navigation menu styling
+                .site---topic--navigation {
+
+                    width: 30%;
+                    /* border: solid 1px #8d8d8d; */
+
+                    ul {
+
+                        padding: 2px;
+                        border-radius: 6px;
+                        background: lighten(lightblue, 4%);
+                        margin: 0 15px;
+
+                        li {
+
+                            line-height: 2.3;
+                            list-style: none;
+
+                            a {
+
+                                color: #690e0e;
+
+                                transition: color .3s;
+
+                                &:hover {
+
+                                    color: #0d56aa;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                // TODO: Progress checklist styling
+                .progress---checklist--container {
+
+                    /* width: 50%; */
+                    /* width: 690px; */
+                    /* border: solid 1px #8d8d8d;  */                   
+
+                    ul {
+
+                        li {
+
+                            list-style: none;
+                            /* width: 120px; */
+                            /* width: 140px; */
+                            width: 25%;
+                            width: auto;
+                            display: inline-block;
+                            /* height: 63px; */
+                            margin: 0 6px;
+
+                            span {
+
+                                img {
+
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 5px;
+                                    margin: 16px auto;
+                                }
+                            }
+
+                            div.progress---checklist--item {
+
+                                text-align: center;
+                                margin: 6px 0;
+                                display: flex;
+                                /* align-items: self-start; */
+                                justify-content: space-between;
+
+                                .progress---checklist--status {
+
+
+                                }
+
+                                .progress---checklist--icon {
+
+                                    &.icon---incomplete {
+
+                                        display: inline-block;
+                                        border-radius: 50%;
+                                        width: 20px;
+                                        height: 20px;
+                                        background: red;
+                                        text-align: center;
+                                        /* border: solid 1px #ffffff; */
+                                    }
+
+                                }
+                            }
+
+                        }
+
+                        
+                    }
+                }
+            }
+
+        }
+    }
+
     &.page---home {
 
         main {
@@ -91,296 +397,8 @@ body {
             background: $background---body; 
 
             &.page {
-
-                // hamburger menu icon
-                #open_page_menu {
-
-                    display: block;
-                    color: #2e2e2e;
-                    font-size: 28px;
-                    padding: 10px;
-                    cursor: pointer;
-                    transition: color .3s;
-
-                    &:hover {
-
-                        color: #720303;
-                    }
-                }
-
-                .search {
-
-                    vertical-align: middle;
-                    align-content: center;
-                    flex-wrap: wrap;
-                }
-
-                nav {
-
-                    &.navigation  {
-
-                        /* margin-top: 20pt;  */               
-                        transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
-                        top: 0;
-                        visibility: hidden;
-                        opacity: 0;
-                        width: auto;
-                        height: 100%;
-                        width: 120px;
-                        background: $background---colour--mobileNav;
-
-                    
-                        /* border-right: #7199ff solid 3px; */
-                        border-right: #720303 solid 3px;
-                    }
-
-                    // icon to close main menu
-                    div.close_menu {
-
-                        display: block;
-                        margin: 10px auto;
-                        width: 20px;
-                        height: 20px;
-                        background: red;
-                        text-align: center;
-                        border-radius: 50%;
-                        padding: 3px;
-                        transition: background .3s;
-
-                        cursor: pointer;
-
-                        &:hover {
-
-                            background: lighten(red, 10%);
-                        }
-
-                        .close_inner_container {
-
-                            position: relative;
-                            top: 2px;
-                            color: white;
-                            font-family: arial;
-                            font-weight: bold;
-
-                            transition: color .3s;
-
-                            &:hover {
-
-                                color: #323030;
-                            }
-                        }
-
-                    }
-
-                    // main toggled navigation menu styles
-                    .sub---navigation {
-
-                        ul {
-
-                            list-style: none;
-
-                            li {
-
-                                line-height: 2.1;
-                                margin: 4pt 0;
-                                padding: 0 3px;
-
-                                a {
-
-                                    color: white;
-                                    text-decoration: none;
-                                    transition: color .3s;
-
-                                    &:hover {
-
-                                        color: lightblue;
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-
-                    a {
-
-
-                    }
-                }
-
-                section.site---search--container {
-
-                    text-align: right;
-                    width: 95%;
-                    /* border: solid 1px #8d8d8d; */
-                    margin: 10px auto;
-                    /* height: 37px; */
-                    /* display: inline-block; */
-                    display: flex;
-                    vertical-align: middle;
-                    justify-content: space-between;
-
-                    #search_text_input {
-
-                        padding: 4px;
-                        border-radius: 6px;
-                        border: #440404 solid 1px;
-                        margin: 5px auto;
-                        vertical-align: middle;
-                    }
-
-                    #btn---search {
-
-                        color: black;
-                        display: inline-block;
-                        text-align: center;
-                        /* padding: 0 12px; */
-                        padding: 3px;
-                        margin: 5px;
-                        border-radius: 6px;
-                        border: solid 1px gray;
-                        text-decoration: none;
-                        font-size: 12px;
-                        vertical-align: middle;
-                        transition: scale 0.3s;
-
-                        transition: scale .3s;
-
-                        > span {
-
-                            transform: scale(1.3);
-
-                        }
-                    }
-                }
-
-                section.site---topic--navigation_container {
-
-                    display: flex;
-                    /* visibility: visible; */
-                    /* opacity: 1; */
-                    width: 95%;
-                    margin: 0 auto;
-
-                    h2 {
-                        
-
-                        text-align: center;
-                    }
-
-                    article {
-
-                        ul {
-
-                            padding: 2px;
-                            border-radius: 6px;
-                            background: lighten(lightblue, 4%);
-                            margin: 0 auto;
-                            text-align: center;
-                        }
-
-
-                    }
-
-                    // TODO: Topic navigation menu styling
-                    .site---topic--navigation {
-
-                        width: 30%;
-                        /* border: solid 1px #8d8d8d; */
-
-                        ul {
-
-                            padding: 2px;
-                            border-radius: 6px;
-                            background: lighten(lightblue, 4%);
-                            margin: 0 15px;
-
-                            li {
-
-                                line-height: 2.3;
-                                list-style: none;
-
-                                a {
-
-                                    color: #690e0e;
-
-                                    transition: color .3s;
-
-                                    &:hover {
-
-                                        color: #0d56aa;
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-
-                    // TODO: Progress checklist styling
-                    .progress---checklist--container {
-
-                        /* width: 50%; */
-                        width: 690px;
-                        /* border: solid 1px #8d8d8d;  */                   
-
-                        ul {
-
-                            li {
-
-                                list-style: none;
-                                /* width: 120px; */
-                                /* width: 140px; */
-                                width: auto;
-                                display: inline-block;
-                                /* height: 63px; */
-                                margin: 0 6px;
-
-                                span {
-
-                                    img {
-
-                                        display: block;
-                                        width: 100%;
-                                        border-radius: 5px;
-                                        margin: 16px auto;
-                                    }
-                                }
-
-                                div.progress---checklist--item {
-
-                                    text-align: center;
-                                    margin: 6px 0;
-                                    display: flex;
-                                    /* align-items: self-start; */
-                                    justify-content: space-between;
-
-                                    .progress---checklist--status {
-
-
-                                    }
-
-                                    .progress---checklist--icon {
-
-                                        &.icon---incomplete {
-
-                                            display: inline-block;
-                                            border-radius: 50%;
-                                            width: 20px;
-                                            height: 20px;
-                                            background: red;
-                                            text-align: center;
-                                            /* border: solid 1px #ffffff; */
-                                        }
-
-                                    }
-                                }
-
-                            }
-
-                            
-                        }
-                    }
-                }
-
+                
+                
             }
     
             // page specific - checklists templates
@@ -394,6 +412,17 @@ body {
 
 
         
+
+    }
+
+    &.page---flashcards {
+
+        color: red;
+
+
+    }
+
+    &.page---motivation {
 
     }
 

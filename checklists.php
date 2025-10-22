@@ -1,6 +1,7 @@
 <?php include "assets/template-parts/header.php"; ?>
     
-<body class="page page---progress--checklists">
+<body class="">
+    
     <header>
 
         <h1>Tech Learning Companion App</h1>
@@ -25,9 +26,9 @@
 
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="checklists.php">Flashcards</a></li>
-                    <li><a href="checklists.php">Quizzes</a></li>
-                    <li><a href="progress.php">Progress</a></li>
+                    <li><a href="cards.php">Flashcards</a></li>
+                    <li><a href="quiz.php">Quizzes</a></li>
+                    <li><a href="checklists.php">Progress</a></li>
                     <li><a href="motivation.php">Motivation</a></li>
                 </ul>
 
