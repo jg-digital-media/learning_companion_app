@@ -335,7 +335,7 @@ body {
                             width: auto;
                             display: inline-block;
                             /* height: 63px; */
-                            margin: 0 6px;
+                            margin: 2px 6px;
 
                             span {
 
@@ -391,10 +391,164 @@ body {
             /* color: red; */
 
             // unique content and selectors
-            .topic---flashcards--container{
+            .topic---flashcards--container {
 
                 /* color: blue; */
                 /* border: solid 1px red; */
+                article {
+
+                    section {
+
+                        nav.progress---checklist--container {
+
+                            ul {
+
+                                /* display: flex; */
+                                align-items: stretch;
+                                align-content: center;
+                                justify-content: space-evenly;
+                                width: 95%;
+                                margin: 14px auto;
+                                padding: 4px 0;
+                                border-radius: 18px;
+                                background: wheat;                                
+                                min-height: 30px;
+                                height: auto;
+
+                                li {
+
+                                    display: inline-block;
+                                }
+
+                                li.status---indicator {
+
+                                    width: 15px;
+                                    height: 15px;
+
+
+                                }
+
+                                li.status---incomplete {
+                                   
+                                    background: red;
+                                    padding: 1px;
+                                    border-radius: 50%;
+                                    border: #720303 solid 2px;
+                                }
+
+                                 li.status---complete {
+
+                                    background: #40ff00;
+                                    padding: 1px;
+                                    border-radius: 50%;
+                                    border: #07822e solid 2px;
+
+
+                                 }
+                            }
+
+                            .progress---stats--container {
+
+                                text-align: left;
+                                margin: 10px auto;
+                                color: red;
+                                border: solid blue 1px;
+                                width: 95%;
+                                font-size: 12px;;
+
+                                div {                                
+                                    display: inline-block;
+                                }
+                            }   
+                            
+                        }
+
+                        h2 {
+
+                            text-align: center;
+                            margin: 15pt 0 0 0;
+                        }
+
+                        .flashcard {
+
+                            background: #fff8a4;
+                            padding: 2px;
+                            width: 94%;
+                            display: block;
+                            /* display: flex; */
+                            min-height: 120px;
+                            height: auto;
+                            margin: 15px auto;
+
+                            &.flashcard---code {
+
+
+                            }
+
+                            .flashcard---content--container {
+
+                                display: flex;
+
+                                .flashcard---content,
+                                .flashcard---icon {
+
+                                    /* width: 50%; */
+                                    padding: 15px 0
+                                }
+
+                                .flashcard---icon {
+
+                                    margin: 5px;
+                                }
+
+                                .flashcard---content {
+
+                                    width: 95%;
+                                    min-height: 80px;
+                                    height: auto;   
+                                }
+
+
+                            }
+
+                           
+
+                            .flashcard---status {
+
+                                display: flex;
+                                /* flex-direction: column; */
+                                justify-content: end;
+
+                                .flashcard---icon {
+
+                                }
+                            }
+
+                            .status---indicator {
+
+                                width: 15px;
+                                height: 15px;
+                                padding: 1px;
+                                border-radius: 50%;
+                                margin: 0 20px;
+                                cursor: pointer;
+
+                                &.status---complete {
+
+                                    background: #40ff00;
+                                    border: #07822e solid 2px;
+                                }
+                                
+                                &.status---incomplete {
+
+                                    background: red;
+                                    border: #720303 solid 2px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
             }
         }
 
