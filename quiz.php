@@ -78,9 +78,7 @@
 
                 <article>
                     
-                    <ul>
-                        <li><p>Quiz content</p></li>
-                    </ul>
+                    <p>Quiz content</p>
 
                 </article>
 

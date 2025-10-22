@@ -72,13 +72,17 @@
 
             </nav>
 
-             <article class="topic---mptivation--container">
+             <article class="topic---motivation--container">
 
                 <!-- <h2>HTML</h2> -->
 
                 <article>
                     
-                    <p>motivation content</p>
+                    <div>
+                        
+                        <p>motivation content</p>
+
+                    </div>
 
                 </article>
 
