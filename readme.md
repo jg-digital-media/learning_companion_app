@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `21-10-2025 - 16:24`
+Last Updated: `22-10-2025 - 17:06`
 
 ## Sections
 
@@ -59,6 +59,12 @@ Last Updated: `21-10-2025 - 16:24`
 + By the end of the day, I got as far as recreating the UI as far as the wireframe goes, with the hamburger menu and search bar side by side. Which was ably placed using Flexbox.  It feels like I got a lot sorted out and barely anything sorted out at the same time.  The question is, do I carry on with the same approach for the rest of the UI or meticulously sort out the CSS before moving on?
 
 + I think I'll build the rest of the markup as that will help me make better decisions about selectors in my CSS. 
+
+### `22-10-2025`
+
++ The pace of development is concerning me at the moment. I've spent the whole day working on the flashcards page and got as far as staging the basics of the UI and its responsiveness. I managed to get to a stage of this that I was happy with. It's concerning because I want to focus on other projects too and would like to finish the UI soon. The sooner this is done, the better. 
+
++ But I do still think I should carry on the approach I decided on yesterday and keep building the markup. Then start reviewing my task list for this project. I'll hope to finish the markup/interface building by the end of tomorrow.
 
 [Back to Top](#learning-companion-app)
 
