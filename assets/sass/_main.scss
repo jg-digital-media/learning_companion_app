@@ -28,8 +28,62 @@ body {
     font-family: $font---main;
     background: $background---body;
 
-    // for main navigation
+    // body class --- homepage
+    &.page---home {
 
+        main {
+
+            article {
+
+                display: block;
+                margin: 50pt auto 0 auto;
+                line-height: 1.5;
+                width: 37%;
+                font-size: $font---size--xlarge;
+                text-align: center;
+
+                @media (max-width: $breakpoint---homepage--sm) {
+
+                    width: 90%;
+                }
+
+            }
+            
+            a#js_enter---website {
+
+                display: block;
+                background: none;
+                color: black;
+                border: solid 1px #8d8d8d;
+                border-radius: 4px;
+                margin: 25px auto;
+                font-weight: bold;
+                font-size: $font---size--medium;
+                /* width: 100%; */
+                width: 60px;
+                text-decoration: none;
+                text-align: center;
+                padding: 6px;
+
+                transition: background .5s;
+
+                @media (max-width: $breakpoint---homepage--sm) {
+
+                    width: 86%;
+                }
+
+                &:hover {
+
+                    background: #7199ff;
+                }
+
+            }
+
+        }
+
+    }
+
+    // for main navigation
     main {
 
         &.page {
@@ -203,15 +257,14 @@ body {
                 width: 95%;
                 margin: 0 auto;
 
-                h2 {
-                    
+                h2 {                    
 
                     text-align: center;
                 }
 
                 article {
 
-                    padding: 2px;
+                    /* padding: 0px; */
                     border-radius: 6px;
                     background: lighten(lightblue, 4%);
                     margin: 0 auto;
@@ -265,7 +318,7 @@ body {
                 }
 
                 // TODO: Progress checklist styling
-                .progress---checklist--container {
+                article {
 
                     /* width: 50%; */
                     /* width: 690px; */
@@ -325,106 +378,97 @@ body {
                             }
 
                         }
-
                         
                     }
                 }
             }
 
         }
-    }
 
-    &.page---home {
+        // Topic Flashcard pages
+        &.page---flashcards {
 
-        main {
+            /* color: red; */
 
-            article {
+            // unique content and selectors
+            .topic---flashcards--container{
 
-                display: block;
-                margin: 50pt auto 0 auto;
-                line-height: 1.5;
-                width: 37%;
-                font-size: $font---size--xlarge;
-                text-align: center;
-
-                @media (max-width: $breakpoint---homepage--sm) {
-
-                    width: 90%;
-                }
-
+                /* color: blue; */
+                /* border: solid 1px red; */
             }
-            
-            a#js_enter---website {
-
-                display: block;
-                background: none;
-                color: black;
-                border: solid 1px #8d8d8d;
-                border-radius: 4px;
-                margin: 25px auto;
-                font-weight: bold;
-                font-size: $font---size--medium;
-                /* width: 100%; */
-                width: 60px;
-                text-decoration: none;
-                text-align: center;
-                padding: 6px;
-
-                transition: background .5s;
-
-                @media (max-width: $breakpoint---homepage--sm) {
-
-                    width: 86%;
-                }
-
-                &:hover {
-
-                    background: #7199ff;
-                }
-
-            }
-
         }
 
-    }
+        // Motivation Page
+        &.page---motivation {
 
-    &.page---progress--checklists {
+            /* color: purple; */
 
-        main {
+            // unique content and selectors
+            .topic---motivation--container {
 
-            width: 100%;
-            /* max-width: 1000px; */
-            background: $background---body; 
+                /* color: pink; */
+                /* border: solid 1px purple; */
 
-            &.page {
-                
-                
+                article {
+
+                    width: 95%;
+
+                    div {
+
+                    }
+                }
             }
-    
-            // page specific - checklists templates
-            &.page---checklists {
 
-            
+
+        }   
+
+        // Quiz Page
+        &.page---quizzes {
+
+            /* color: green; */
+
+            // unique content and selectors
+            .topic---quizzes--container {
+
+                /* color: yellow; */
+                /* border: solid 1px green; */
+            }
+        }
+
+        // progress checklists page
+        &.page---checklists {
+
+            /* color: orange; */
+
+            .progress---checklist--container {
+
+                /* color: brown; */
+                /* border: solid 1px orange; */
 
             }
 
-    }   
+            main {
 
+                width: 100%;
+                /* max-width: 1000px; */
+                background: $background---body; 
 
+                &.page {
+                    
+                    
+                }
         
+                // page specific - checklists templates
+                &.page---checklists {
 
-    }
+                
 
-    &.page---flashcards {
+                }
 
-        color: red;
+            }         
 
-
-    }
-
-    &.page---motivation {
-
-    }
+        }
+    }    
 
 }
 
