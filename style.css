@@ -1,4 +1,4 @@
-/* Last Update: 22-10-2025 13:05 */
+/* Last Update: 22-10-2025 16:52 */
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +22,43 @@ header span {
 body {
   font-family: "Times New Roman", Times, serif;
   background: lightblue;
+}
+body.page---home main article {
+  display: block;
+  margin: 50pt auto 0 auto;
+  line-height: 1.5;
+  width: 37%;
+  font-size: 22pt;
+  text-align: center;
+}
+@media (max-width: 680px) {
+  body.page---home main article {
+    width: 90%;
+  }
+}
+body.page---home main a#js_enter---website {
+  display: block;
+  background: none;
+  color: black;
+  border: solid 1px #8d8d8d;
+  border-radius: 4px;
+  margin: 25px auto;
+  font-weight: bold;
+  font-size: 16px;
+  /* width: 100%; */
+  width: 60px;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px;
+  transition: background 0.5s;
+}
+@media (max-width: 680px) {
+  body.page---home main a#js_enter---website {
+    width: 86%;
+  }
+}
+body.page---home main a#js_enter---website:hover {
+  background: #7199ff;
 }
 body main.page #open_page_menu {
   display: block;
@@ -142,7 +179,7 @@ body main.page section.site---topic--navigation_container h2 {
   text-align: center;
 }
 body main.page section.site---topic--navigation_container article {
-  padding: 2px;
+  /* padding: 0px; */
   border-radius: 6px;
   background: #bddfeb;
   margin: 0 auto;
@@ -178,12 +215,12 @@ body main.page section.site---topic--navigation_container .site---topic--navigat
 body main.page section.site---topic--navigation_container .site---topic--navigation ul li a:hover {
   color: #0d56aa;
 }
-body main.page section.site---topic--navigation_container .progress---checklist--container {
+body main.page section.site---topic--navigation_container article {
   /* width: 50%; */
   /* width: 690px; */
   /* border: solid 1px #8d8d8d;  */
 }
-body main.page section.site---topic--navigation_container .progress---checklist--container ul li {
+body main.page section.site---topic--navigation_container article ul li {
   list-style: none;
   /* width: 120px; */
   /* width: 140px; */
@@ -191,22 +228,22 @@ body main.page section.site---topic--navigation_container .progress---checklist-
   width: auto;
   display: inline-block;
   /* height: 63px; */
-  margin: 0 6px;
+  margin: 2px 6px;
 }
-body main.page section.site---topic--navigation_container .progress---checklist--container ul li span img {
+body main.page section.site---topic--navigation_container article ul li span img {
   display: block;
   width: 100%;
   border-radius: 5px;
   margin: 16px auto;
 }
-body main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item {
+body main.page section.site---topic--navigation_container article ul li div.progress---checklist--item {
   text-align: center;
   margin: 6px 0;
   display: flex;
   /* align-items: self-start; */
   justify-content: space-between;
 }
-body main.page section.site---topic--navigation_container .progress---checklist--container ul li div.progress---checklist--item .progress---checklist--icon.icon---incomplete {
+body main.page section.site---topic--navigation_container article ul li div.progress---checklist--item .progress---checklist--icon.icon---incomplete {
   display: inline-block;
   border-radius: 50%;
   width: 20px;
@@ -215,50 +252,135 @@ body main.page section.site---topic--navigation_container .progress---checklist-
   text-align: center;
   /* border: solid 1px #ffffff; */
 }
-body.page---home main article {
-  display: block;
-  margin: 50pt auto 0 auto;
-  line-height: 1.5;
-  width: 37%;
-  font-size: 22pt;
+body main.page---flashcards {
+  /* color: red; */
+}
+body main.page---flashcards .topic---flashcards--container {
+  /* color: blue; */
+  /* border: solid 1px red; */
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container ul {
+  /* display: flex; */
+  align-items: stretch;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: 14px auto;
+  padding: 4px 0;
+  border-radius: 18px;
+  background: wheat;
+  min-height: 30px;
+  height: auto;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container ul li {
+  display: inline-block;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container ul li.status---indicator {
+  width: 15px;
+  height: 15px;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container ul li.status---incomplete {
+  background: red;
+  padding: 1px;
+  border-radius: 50%;
+  border: #720303 solid 2px;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container ul li.status---complete {
+  background: #40ff00;
+  padding: 1px;
+  border-radius: 50%;
+  border: #07822e solid 2px;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container {
+  text-align: left;
+  margin: 10px auto;
+  color: red;
+  border: solid blue 1px;
+  width: 95%;
+  font-size: 12px;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container div {
+  display: inline-block;
+}
+body main.page---flashcards .topic---flashcards--container article section h2 {
   text-align: center;
+  margin: 15pt 0 0 0;
 }
-@media (max-width: 680px) {
-  body.page---home main article {
-    width: 90%;
-  }
-}
-body.page---home main a#js_enter---website {
+body main.page---flashcards .topic---flashcards--container article section .flashcard {
+  background: #fff8a4;
+  padding: 2px;
+  width: 94%;
   display: block;
-  background: none;
-  color: black;
-  border: solid 1px #8d8d8d;
-  border-radius: 4px;
-  margin: 25px auto;
-  font-weight: bold;
-  font-size: 16px;
-  /* width: 100%; */
-  width: 60px;
-  text-decoration: none;
-  text-align: center;
-  padding: 6px;
-  transition: background 0.5s;
+  /* display: flex; */
+  min-height: 120px;
+  height: auto;
+  margin: 15px auto;
 }
-@media (max-width: 680px) {
-  body.page---home main a#js_enter---website {
-    width: 86%;
-  }
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container {
+  display: flex;
 }
-body.page---home main a#js_enter---website:hover {
-  background: #7199ff;
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---content,
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---icon {
+  /* width: 50%; */
+  padding: 15px 0;
 }
-body.page---progress--checklists main {
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---icon {
+  margin: 5px;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---content {
+  width: 95%;
+  min-height: 80px;
+  height: auto;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---status {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: end;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator {
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  border-radius: 50%;
+  margin: 0 20px;
+  cursor: pointer;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---complete {
+  background: #40ff00;
+  border: #07822e solid 2px;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---incomplete {
+  background: red;
+  border: #720303 solid 2px;
+}
+body main.page---motivation {
+  /* color: purple; */
+}
+body main.page---motivation .topic---motivation--container {
+  /* color: pink; */
+  /* border: solid 1px purple; */
+}
+body main.page---motivation .topic---motivation--container article {
+  width: 95%;
+}
+body main.page---quizzes {
+  /* color: green; */
+}
+body main.page---quizzes .topic---quizzes--container {
+  /* color: yellow; */
+  /* border: solid 1px green; */
+}
+body main.page---checklists {
+  /* color: orange; */
+}
+body main.page---checklists .progress---checklist--container {
+  /* color: brown; */
+  /* border: solid 1px orange; */
+}
+body main.page---checklists main {
   width: 100%;
   /* max-width: 1000px; */
   background: lightblue;
-}
-body.page---flashcards {
-  color: red;
 }
 footer {
   display: block;

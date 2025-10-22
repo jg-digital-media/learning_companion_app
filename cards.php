@@ -78,9 +78,102 @@
 
                 <article>
                     
-                    <ul>
+                    <!-- <ul>
                         <li><p>Cards content</p></li>
-                    </ul>
+                    </ul> -->
+
+                    <section> 
+
+                        <!-- Progress Tracker -->
+
+                        <nav class="progress---checklist--container">
+
+                            <ul>
+                                <li class="status---indicator status---complete">&nbsp;</li>
+                                <li class="status---indicator status---complete">&nbsp;</li>   
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                                <li class="status---indicator status---incomplete">&nbsp;</li>
+                            </ul>
+
+                            <aside class="progress---stats--container">
+
+                                <div class="progress--stats">12 of 10</div>
+                                <div class="progress---percentage">0%</div>
+
+                            </aside>
+                            
+                        </nav>
+
+                        <h2>Flashcards: HTML</h2>
+
+                        <article class="flashcard flashcard---code">
+
+                            <div class="flashcard---content--container">
+                                
+                                <div class="flashcard---content">
+                                    &lt;p&gt;Hello World&lt;/p&gt;
+
+                                    &lt;p&gt;Hello World&lt;/p&gt;
+
+                                    &lt;h1&gt;Hello World&lt;/h1&gt;   
+
+                                </div>
+                                    
+                                <div class="flashchard---icon">&#128211;</div>
+                            
+                            </div>
+
+                            <div class="flashcard---status--container">
+
+                                <div class="flashcard---status">
+                                    <aside>Complete</aside>
+                                    <span class="status---indicator status---complete">&nbsp;</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="flashcard flashcard---code">
+
+                            <div class="flashcard---content--container">
+                                
+                                <div class="flashcard---content">
+                                    &lt;p&gt;Hello World&lt;/p&gt;
+
+                                    &lt;p&gt;Hello World&lt;/p&gt;
+
+                                    &lt;h1&gt;Hello World&lt;/h1&gt;   
+
+                                </div>
+                                    
+                                <div class="flashchard---icon">&#60;&#62;</div>
+                            
+                            </div>
+
+                            <div class="flashcard---status--container">
+
+                                <div class="flashcard---status">
+                                    <aside>Complete</aside>
+                                    <span class="status---indicator status---complete">&nbsp;</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        
+
+                    </section>
 
                 </article>
 
