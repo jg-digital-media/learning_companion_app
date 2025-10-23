@@ -85,7 +85,7 @@
 
                             <aside class="progress---stats--container">
 
-                                <div class="progress--stats">1 of 11 completed</div>
+                                <div class="progress---stats"><span id="projects---number">1</span> of <span id="projects---total">11</span> completed</div>
                                 <div class="progress---percentage">(0%)</div>
 
                             </aside>
