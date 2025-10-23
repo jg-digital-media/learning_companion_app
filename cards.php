@@ -111,7 +111,7 @@
 
                                 </div>
                                     
-                                <div class="flashchard---icon">&#128211;</div>
+                                <div class="flashcard---icon">&#128211;</div>
                             
                             </div>
 
@@ -143,7 +143,7 @@
 
                                 </div>
                                     
-                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
+                                <div class="flashcard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
                             
                             </div>
 
@@ -175,7 +175,7 @@
 
                                 </div>
                                     
-                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
+                                <div class="flashcard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
                             
                             </div>
 
@@ -207,7 +207,7 @@
 
                                 </div>
                                     
-                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
+                                <div class="flashcard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
                             
                             </div>
 
@@ -222,8 +222,6 @@
                             </div>
 
                         </article>
-
-                        
 
                     </section>
 
