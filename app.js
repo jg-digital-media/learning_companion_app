@@ -1,6 +1,4 @@
-console.log("app.js connected - 21-10-2025 - 11:19");
-
-// TODO: handle toggling of .navigation visilibity
+console.log("app.js connected - 23-10-2025 - 17:07");
 
 function openNav() {
 
