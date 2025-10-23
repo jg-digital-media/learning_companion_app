@@ -9,10 +9,7 @@ header {
 
     text-align: center;
     position: relative;
-    /* margin: 20pt; */
     padding: 20pt;
-    /* font-size: $font---size--h1; */
-    /* background: none; */
     background: $background---col--header;
 
     // TODO: Experiment with box shadow for header element
@@ -73,10 +70,8 @@ body {
                 text-align: center;
 
                 @media (max-width: $breakpoint---homepage--md) {
-
                     
                     width: 63%;
-
                 }
 
                 @media (max-width: $breakpoint---homepage--sm) {
@@ -105,6 +100,8 @@ body {
                 text-decoration: none;
                 text-align: center;
                 padding: 7px;
+                /* box-shadow: black 2px 3px 0px 0px; */
+                box-shadow: black 2px 3px 0px 0px;
 
                 transition: background .3s, color .3s;
 
@@ -148,36 +145,38 @@ body {
                 height: 32px;
                 width: 32px;
                 text-align: center;
+                /* box-shadow: black 1px 1px 0px 0px; */
 
-                transition: background .3s, color .3s;
+                transition: background .3s, color .3s, box-shadow .3s;
 
                 &:hover {
 
                     color: #720303;
                     background: darken(#86deff, 10%);
+                    box-shadow: black 1px 1px 0px 0px;
                 }
             }
 
+            // main page navigation
             nav {
 
                 &.navigation  {
 
-                    /* margin-top: 20pt;  */               
-                    transition: opacity .3s ease-in-out, visibility .3s; position: absolute;
+                    /* margin-top: 20pt;  */
                     top: 0;
                     visibility: hidden;
                     opacity: 0;
                     width: auto;
                     height: 100%;
                     width: 120px;
-                    background: $background---colour--mobileNav;
-
-                
-                    /* border-right: #7199ff solid 3px; */
+                    background: $background---colour--mobileNav; /* border-right: #7199ff solid 3px; */
                     border-right: #720303 solid 3px;
+
+                                   
+                    transition: opacity .3s ease-in-out, visibility .3s; position: absolute;                   
                 }
 
-                // icon to close main menu
+                // (X) icon to close main menu
                 div.close_menu {
 
                     display: block;
@@ -211,6 +210,7 @@ body {
 
                             color: #323030;
                         }
+
                     }
 
                 }
@@ -271,11 +271,12 @@ body {
 
                 #search_text_input {
 
-                    padding: 4px;
+                    padding: 6px;
                     border-radius: 6px;
-                    border: #440404 solid 1px;
+                    border: #440404 solid 2px;
                     margin: 5px auto;
                     vertical-align: middle;
+                    color: black;
 
                     transition: background .3s;
 
@@ -291,7 +292,7 @@ body {
                     display: inline-block;
                     text-align: center;
                     /* padding: 0 12px; */
-                    padding: 3px;
+                    padding: 6px;
                     margin: 5px;
                     border-radius: 6px;
                     border: solid 1px gray;
@@ -387,8 +388,7 @@ body {
                         }
                     }
                 }
-
-                // TODO: Progress checklist styling
+                
                 article {
 
                     /* width: 50%; */
@@ -456,6 +456,7 @@ body {
                                         background: red;
                                         text-align: center;
                                         /* border: solid 1px #ffffff; */
+                                        border: solid 1px #000000;
                                     }
 
                                 }
@@ -704,24 +705,9 @@ body {
                 h2 {
 
                     text-align: center;
+                    margin-top: 16pt;
                 }
 
-                #btn---home {
-
-                    display: block;
-                    margin: 0 auto;
-                    color: red;
-                    width: 120px;
-                    text-align: center;
-
-                    transition: color .3s;
-
-                    &:hover {
-
-                        color: blue;
-                    }
-
-                }
 
                 div {
 
@@ -742,14 +728,21 @@ body {
                         font-style: italic;
                         font-weight: bold;
                         text-align: center;
-                        padding: 5px;
+                        padding: 15px;
                         background: #bcefff;
                         border-radius: 8px;    
-                        box-shadow: #858383 0 0 6px 2px;       
+                        box-shadow: #858383 0 0 6px 2px;   
+                        
+                        @media (max-width: $breakpoint---homepage--sm) {
+
+                            width: 75%;
+                            font-size: $font---size--small;
+                        }
                     }
                    
                 }
 
+                // Button Reload quote
                 a#reload_quote {
 
                     display: block;

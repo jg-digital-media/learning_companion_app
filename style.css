@@ -1,4 +1,4 @@
-/* Last Update: 22-10-2025 16:52 */
+/* Last Update: 23-10-2025 17:09 */
 * {
   padding: 0;
   margin: 0;
@@ -7,83 +7,126 @@
 header {
   text-align: center;
   position: relative;
-  /* margin: 20pt; */
   padding: 20pt;
-  /* font-size: $font---size--h1; */
-  /* background: none; */
   background: greenyellow;
-  box-shadow: greenyellow -2px 0px 15px 0px;
+  /* box-shadow: $background---col--header -2px 0px 15px 0px; */
+  /* box-shadow: $background---col--header 0px 3px 7px 0px; */
+}
+@media (max-width: 680px) {
+  header {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+header h1 {
+  font-size: 28px;
+}
+@media (max-width: 680px) {
+  header h1 {
+    font-size: 4vw;
+  }
 }
 header span {
-  font-size: 14px;
+  /* font-size: $font---size--small; */
+  font-weight: bold;
   font-style: italic;
+  color: #222222;
+}
+@media (max-width: 480px) {
+  header span {
+    font-size: 3vw;
+  }
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: lightblue;
 }
 body.page---home main article {
   display: block;
   margin: 50pt auto 0 auto;
   line-height: 1.5;
-  width: 37%;
+  width: 41%;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22pt;
   text-align: center;
+}
+@media (max-width: 980px) {
+  body.page---home main article {
+    width: 63%;
+  }
 }
 @media (max-width: 680px) {
   body.page---home main article {
     width: 90%;
+    font-size: 19pt;
+    margin: 38pt auto;
   }
 }
 body.page---home main a#js_enter---website {
   display: block;
-  background: none;
+  /* background: none; */
+  background: greenyellow;
   color: black;
   border: solid 1px #8d8d8d;
   border-radius: 4px;
   margin: 25px auto;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   /* width: 100%; */
   width: 60px;
   text-decoration: none;
   text-align: center;
-  padding: 6px;
-  transition: background 0.5s;
+  padding: 7px;
+  /* box-shadow: black 2px 3px 0px 0px; */
+  box-shadow: black 2px 3px 0px 0px;
+  transition: background 0.3s, color 0.3s;
 }
-@media (max-width: 680px) {
+@media (max-width: 480px) {
   body.page---home main a#js_enter---website {
-    width: 86%;
+    width: 90%;
+    /* margin: 30px auto; */
+    padding: 8px 0;
   }
 }
 body.page---home main a#js_enter---website:hover {
-  background: #7199ff;
+  background: #d001bb;
+  color: white;
 }
 body main.page #open_page_menu {
   display: block;
   color: #2e2e2e;
-  font-size: 28px;
-  padding: 10px;
+  font-size: 22px;
+  padding: 0px;
   cursor: pointer;
   transition: color 0.3s;
+  background: #86deff;
+  border: solid 1px #878585;
+  border-radius: 6px;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  /* box-shadow: black 1px 1px 0px 0px; */
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 body main.page #open_page_menu:hover {
   color: #720303;
+  background: #53d0ff;
+  box-shadow: black 1px 1px 0px 0px;
 }
 body main.page nav.navigation {
   /* margin-top: 20pt;  */
-  transition: opacity 0.3s ease-in-out, visibility 0.3s;
-  position: absolute;
   top: 0;
   visibility: hidden;
   opacity: 0;
   width: auto;
   height: 100%;
   width: 120px;
-  background: #272727;
-  /* border-right: #7199ff solid 3px; */
+  background: #272727; /* border-right: #7199ff solid 3px; */
   border-right: #720303 solid 3px;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  position: absolute;
 }
 body main.page nav div.close_menu {
   display: block;
@@ -144,18 +187,23 @@ body main.page section.site---search--container {
   justify-content: space-between;
 }
 body main.page section.site---search--container #search_text_input {
-  padding: 4px;
+  padding: 6px;
   border-radius: 6px;
-  border: #440404 solid 1px;
+  border: #440404 solid 2px;
   margin: 5px auto;
   vertical-align: middle;
+  color: black;
+  transition: background 0.3s;
+}
+body main.page section.site---search--container #search_text_input:hover {
+  background: #ffffa8;
 }
 body main.page section.site---search--container #btn---search {
   color: black;
   display: inline-block;
   text-align: center;
   /* padding: 0 12px; */
-  padding: 3px;
+  padding: 6px;
   margin: 5px;
   border-radius: 6px;
   border: solid 1px gray;
@@ -195,7 +243,7 @@ body main.page section.site---topic--navigation_container article {
   } */
 }
 body main.page section.site---topic--navigation_container .site---topic--navigation {
-  width: 30%;
+  width: 33%;
   /* border: solid 1px #8d8d8d; */
 }
 body main.page section.site---topic--navigation_container .site---topic--navigation ul {
@@ -207,18 +255,33 @@ body main.page section.site---topic--navigation_container .site---topic--navigat
 body main.page section.site---topic--navigation_container .site---topic--navigation ul li {
   line-height: 2.3;
   list-style: none;
+  font-size: 14px;
 }
 body main.page section.site---topic--navigation_container .site---topic--navigation ul li a {
   color: #690e0e;
+  border-bottom: 3px solid none;
+  text-decoration: none;
   transition: color 0.3s;
 }
 body main.page section.site---topic--navigation_container .site---topic--navigation ul li a:hover {
   color: #0d56aa;
+  font-weight: bold;
+}
+body main.page section.site---topic--navigation_container .site---topic--navigation ul li a.selected {
+  color: #0d56aa;
+  border-bottom: 3px solid red;
+  font-weight: bold;
 }
 body main.page section.site---topic--navigation_container article {
   /* width: 50%; */
-  /* width: 690px; */
+  width: 690px;
   /* border: solid 1px #8d8d8d;  */
+}
+@media (max-width: 980px) {
+  body main.page section.site---topic--navigation_container article {
+    /* width: 65%; */
+    width: 76%;
+  }
 }
 body main.page section.site---topic--navigation_container article ul li {
   list-style: none;
@@ -251,6 +314,7 @@ body main.page section.site---topic--navigation_container article ul li div.prog
   background: red;
   text-align: center;
   /* border: solid 1px #ffffff; */
+  border: solid 1px #000000;
 }
 body main.page---flashcards {
   /* color: red; */
@@ -265,8 +329,8 @@ body main.page---flashcards .topic---flashcards--container article section nav.p
   align-content: center;
   justify-content: space-evenly;
   width: 95%;
-  margin: 14px auto;
-  padding: 4px 0;
+  margin: 8px auto;
+  padding: 6px 0;
   border-radius: 18px;
   background: wheat;
   min-height: 30px;
@@ -293,14 +357,18 @@ body main.page---flashcards .topic---flashcards--container article section nav.p
 }
 body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container {
   text-align: left;
-  margin: 10px auto;
+  margin: 3px auto;
   color: red;
   border: solid blue 1px;
   width: 95%;
   font-size: 12px;
 }
-body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container div {
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container .progress---stats,
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container .progress---percentage {
   display: inline-block;
+}
+body main.page---flashcards .topic---flashcards--container article section nav.progress---checklist--container .progress---stats--container .progress--stats span {
+  font-weight: bold;
 }
 body main.page---flashcards .topic---flashcards--container article section h2 {
   text-align: center;
@@ -308,21 +376,33 @@ body main.page---flashcards .topic---flashcards--container article section h2 {
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard {
   background: #fff8a4;
+  border: solid 1px #fff8a4;
   padding: 2px;
-  width: 94%;
+  width: 480px;
+  /* width: 94%; */
   display: block;
   /* display: flex; */
   min-height: 120px;
   height: auto;
   margin: 15px auto;
+  transition: border 0.3s;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard:hover {
+  border: solid 1px #fff252;
+}
+@media (max-width: 980px) {
+  body main.page---flashcards .topic---flashcards--container article section .flashcard {
+    width: 94%;
+  }
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container {
   display: flex;
+  width: 95%;
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---content,
 body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---icon {
   /* width: 50%; */
-  padding: 15px 0;
+  padding: 5px 0;
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---icon {
   margin: 5px;
@@ -331,6 +411,18 @@ body main.page---flashcards .topic---flashcards--container article section .flas
   width: 95%;
   min-height: 80px;
   height: auto;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---content--container .flashcard---content .flashcard---inner--content {
+  width: 55%;
+  display: block;
+  margin: 0 auto;
+  line-height: 1.9;
+  text-align: left;
+  font-size: 14px;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---status--container {
+  /* font-size: 14px; */
+  font-size: 20px;
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard .flashcard---status {
   display: flex;
@@ -356,12 +448,71 @@ body main.page---flashcards .topic---flashcards--container article section .flas
 body main.page---motivation {
   /* color: purple; */
 }
-body main.page---motivation .topic---motivation--container {
+body main.page---motivation .motivation---page--container {
   /* color: pink; */
   /* border: solid 1px purple; */
 }
-body main.page---motivation .topic---motivation--container article {
+body main.page---motivation .motivation---page--container h2 {
+  text-align: center;
+  margin-top: 16pt;
+}
+body main.page---motivation .motivation---page--container div {
+  display: block;
   width: 95%;
+  /* border: white solid 1px; */
+  margin: 5px auto;
+  padding: 2px;
+}
+body main.page---motivation .motivation---page--container div p {
+  display: block;
+  width: 50%;
+  margin: 30pt auto;
+  line-height: 2;
+  min-height: 36px;
+  height: auto;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  background: #bcefff;
+  border-radius: 8px;
+  box-shadow: #858383 0 0 6px 2px;
+}
+@media (max-width: 680px) {
+  body main.page---motivation .motivation---page--container div p {
+    width: 75%;
+    font-size: 14px;
+  }
+}
+body main.page---motivation .motivation---page--container a#reload_quote {
+  display: block;
+  /* background: none; */
+  background: greenyellow;
+  color: black;
+  border: solid 1px #8d8d8d;
+  border-radius: 4px;
+  margin: 25px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  /* width: 100%; */
+  /* width: 60px; */
+  width: 145px;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px;
+  transition: background 0.3s, color 0.3s;
+}
+@media (max-width: 480px) {
+  body main.page---motivation .motivation---page--container a#reload_quote {
+    width: 90%;
+    /* margin: 30px auto; */
+    padding: 8px 0;
+  }
+}
+body main.page---motivation .motivation---page--container a#reload_quote:hover {
+  background: #d001bb;
+  color: white;
 }
 body main.page---quizzes {
   /* color: green; */
@@ -369,6 +520,125 @@ body main.page---quizzes {
 body main.page---quizzes .topic---quizzes--container {
   /* color: yellow; */
   /* border: solid 1px green; */
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container ul {
+  /* display: flex; */
+  align-items: stretch;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: 14px auto;
+  padding: 4px 0;
+  border-radius: 18px;
+  background: wheat;
+  min-height: 30px;
+  height: auto;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container ul li {
+  display: inline-block;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container ul li.status---indicator {
+  width: 15px;
+  height: 15px;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container ul li.status---incomplete {
+  background: red;
+  padding: 1px;
+  border-radius: 50%;
+  border: #720303 solid 2px;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container ul li.status---complete {
+  background: #40ff00;
+  padding: 1px;
+  border-radius: 50%;
+  border: #07822e solid 2px;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container .progress---stats--container {
+  text-align: left;
+  margin: 10px auto;
+  color: red;
+  border: solid blue 1px;
+  width: 95%;
+  font-size: 12px;
+}
+body main.page---quizzes .topic---quizzes--container article nav.progress---checklist--container .progress---stats--container div {
+  display: inline-block;
+}
+body main.page---quizzes .topic---quizzes--container article h2 {
+  text-align: center;
+  margin: 15pt 0 0 0;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz {
+  /* background: wheat; */
+  background: #fff8a4;
+  border: solid 1px #fff8a4;
+  margin: 15px auto;
+  padding: 2px;
+  width: 50%;
+  transition: border 0.3s;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz:hover {
+  border: solid 1px #fff252;
+}
+@media (max-width: 980px) {
+  body main.page---quizzes .topic---quizzes--container article .quiz {
+    width: 100%;
+  }
+}
+body main.page---quizzes .topic---quizzes--container article .quiz,
+body main.page---quizzes .topic---quizzes--container article .quiz---content--container {
+  /* color: red; */
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---icon {
+  width: 100%;
+  text-align: right;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---content--container .quiz---content {
+  padding: 4px 0;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---buttons--container .quiz---buttons a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #b33434;
+  width: 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---buttons--container .quiz---buttons a:hover {
+  background: blue;
+  background: #cc4e4e;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---feedback--container {
+  align-items: stretch;
+  /* color: blue; */
+  width: 100%;
+  text-align: right;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---feedback--container a#btn_flip {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: red;
+  padding: 1px;
+  border-radius: 50%;
+  border: #720303 solid 2px;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---feedback--container .quiz---feedback {
+  text-align: center;
+  font-weight: bold;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---feedback--container .quiz---feedback.feedback--correct {
+  /* color: #05f105; */
+  color: #077a07;
+}
+body main.page---quizzes .topic---quizzes--container article .quiz---feedback--container .quiz---feedback.feedback--incorrect {
+  color: red;
 }
 body main.page---checklists {
   /* color: orange; */
@@ -385,9 +655,10 @@ body main.page---checklists main {
 footer {
   display: block;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 14px;
+  /* font-size: $font---size--small; */
+  font-size: 12px;
 }
 footer a {
   color: #7199ff;
