@@ -3,7 +3,7 @@
 <nav class="site---topic--navigation">
 
     <ul>            
-        <li><a href="#">HTML</a></li>
+        <li><a href="#" class="selected">HTML</a></li>
         <li><a href="#">SCSS</a></li>
         <li><a href="#">CSS</a></li>
         <li><a href="#">JavaScript</a></li>

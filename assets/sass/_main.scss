@@ -358,13 +358,22 @@ body {
 
                             a {
 
-                                color: $url---colour--topiclist;
+                                color: $url---colour--topiclist;border-bottom: 3px solid none;
+                                text-decoration: none;
 
                                 transition: color .3s;
 
                                 &:hover {
 
                                     color: $url---colour--topiclist-hvr;
+                                    font-weight: bold;
+                                }
+
+                                &.selected {
+
+                                    color: $url---colour--topiclist-hvr;
+                                    border-bottom: 3px solid red;
+                                    font-weight: bold;
                                 }
 
                             }
