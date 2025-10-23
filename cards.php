@@ -104,8 +104,8 @@
 
                             <aside class="progress---stats--container">
 
-                                <div class="progress--stats">12 of 10</div>
-                                <div class="progress---percentage">0%</div>
+                                <div class="progress--stats">1 of 11 completed</div>
+                                <div class="progress---percentage">(0%)</div>
 
                             </aside>
                             
@@ -118,11 +118,15 @@
                             <div class="flashcard---content--container">
                                 
                                 <div class="flashcard---content">
-                                    &lt;p&gt;Hello World&lt;/p&gt;
 
-                                    &lt;p&gt;Hello World&lt;/p&gt;
+                                    <div class="flashcard---inner--content">
+                                        &lt;p&gt;Hello World&lt;/p&gt;
 
-                                    &lt;h1&gt;Hello World&lt;/h1&gt;   
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;h1&gt;Hello World&lt;/h1&gt;   
+
+                                    </div>
 
                                 </div>
                                     
@@ -147,15 +151,82 @@
                             <div class="flashcard---content--container">
                                 
                                 <div class="flashcard---content">
-                                    &lt;p&gt;Hello World&lt;/p&gt;
 
-                                    &lt;p&gt;Hello World&lt;/p&gt;
+                                    <div class="flashcard---inner--content">
+                                        &lt;p&gt;Hello World&lt;/p&gt;
 
-                                    &lt;h1&gt;Hello World&lt;/h1&gt;   
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;h1&gt;Hello World&lt;/h1&gt;   
+                                    </div>
 
                                 </div>
                                     
-                                <div class="flashchard---icon">&#60;&#62;</div>
+                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
+                            
+                            </div>
+
+                            <div class="flashcard---status--container">
+
+                                <div class="flashcard---status">
+                                    <aside>Complete</aside>
+                                    <span class="status---indicator status---complete">&nbsp;</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="flashcard flashcard---code">
+
+                            <div class="flashcard---content--container">
+                                
+                                <div class="flashcard---content">
+
+                                    <div class="flashcard---inner--content">
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;h1&gt;Hello World&lt;/h1&gt;   
+                                    </div>
+
+                                </div>
+                                    
+                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
+                            
+                            </div>
+
+                            <div class="flashcard---status--container">
+
+                                <div class="flashcard---status">
+                                    <aside>Complete</aside>
+                                    <span class="status---indicator status---complete">&nbsp;</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <article class="flashcard flashcard---code">
+
+                            <div class="flashcard---content--container">
+                                
+                                <div class="flashcard---content">
+
+                                    <div class="flashcard---inner--content">
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;p&gt;Hello World&lt;/p&gt;
+
+                                        &lt;h1&gt;Hello World&lt;/h1&gt;   
+                                    </div>
+
+                                </div>
+                                    
+                                <div class="flashchard---icon"> <img src="assets/images/code-bracket-icon.png"></div>
                             
                             </div>
 
