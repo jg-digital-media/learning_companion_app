@@ -18,6 +18,6 @@
 
     </main>
 
-    <p>index.php</p> 
+    <!-- <p>index.php</p>  -->
 
 <?php include "assets/template-parts/footer.php"; ?>

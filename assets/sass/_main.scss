@@ -39,6 +39,7 @@ body {
                 margin: 50pt auto 0 auto;
                 line-height: 1.5;
                 width: 37%;
+                font-family: Arial, Helvetica, sans-serif;
                 font-size: $font---size--xlarge;
                 text-align: center;
 
@@ -52,20 +53,22 @@ body {
             a#js_enter---website {
 
                 display: block;
-                background: none;
+                /* background: none; */
+                background: $background---btn--homepage;
                 color: black;
                 border: solid 1px #8d8d8d;
                 border-radius: 4px;
                 margin: 25px auto;
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
-                font-size: $font---size--medium;
+                font-size: $font---size--small;
                 /* width: 100%; */
                 width: 60px;
                 text-decoration: none;
                 text-align: center;
-                padding: 6px;
+                padding: 7px;
 
-                transition: background .5s;
+                transition: background .3s, color .3s;
 
                 @media (max-width: $breakpoint---homepage--sm) {
 
@@ -74,7 +77,8 @@ body {
 
                 &:hover {
 
-                    background: #7199ff;
+                    background: $background---btn--homepage-hvr;
+                    color: white;
                 }
 
             }
