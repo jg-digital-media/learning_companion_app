@@ -72,13 +72,156 @@
 
             </nav>
 
-             <article class="topic---quizzes--container">
+            <article class="topic---quizzes--container">
 
                 <!-- <h2>HTML</h2> -->
 
                 <article>
                     
-                    <p>Quiz content</p>
+                    <!-- <p>Quiz content</p> -->
+
+                    <!-- Progress Tracker 
+
+                    <nav class="progress---checklist--container">
+
+                        <ul>
+                            <li class="status---indicator status---complete">&nbsp;</li>
+                            <li class="status---indicator status---complete">&nbsp;</li>   
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                            <li class="status---indicator status---incomplete">&nbsp;</li>
+                        </ul>
+
+                        <aside class="progress---stats--container">
+
+                            <div class="progress--stats">12 of 10</div>
+                            <div class="progress---percentage">0%</div>
+
+                        </aside>
+                        
+                    </nav> -->
+
+                    <h2>Quiz/Trivia: HTML</h2>
+
+                    <article class="quiz quiz---code">
+
+                        <div class="quiz---content--container">
+                                
+                            <div class="quiz---icon">&#128211;</div>
+                            
+                            <div class="quiz---content">
+                               
+                                <p>What is the difference between &lt;p&gt; and &lt;h1&gt;?</p>
+
+                            </div>
+
+                            <div class="quiz---buttons--container">
+
+                                <div class="quiz---buttons">
+                                    <a href="#" class="btn btn--quiz">A</a>
+                                    <a href="#" class="btn btn--quiz">B</a>
+                                    <a href="#" class="btn btn--quiz">C</a>
+                                    <a href="#" class="btn btn--quiz">D</a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="quiz---feedback--container">
+
+                                <div class="quiz---feedback">
+                                    <p>Correct!</p>
+                                </div>
+
+                                <div class="quiz---feedback">
+                                    <p>Incorrect!</p>
+                                </div>
+
+                                <div class="quiz---feedback">
+                                    <!-- <p>Incorrect!</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="quiz quiz---code">
+
+                        <div class="quiz---icon">&#128211;</div>
+
+                        <div class="quiz---content--container">
+
+                            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        </div>
+                            
+                        <div class="quiz---feedback--container">
+
+                             Complete
+                             <a href="#" id="btn_flip" class="btn btn--flip">&nbsp;</a>
+                             <a href="">Flip</a>                    
+
+                        </div>
+
+                    </article> 
+
+                    <article class="quiz quiz---code backface">
+
+                        <div class="quiz---icon">&#128211;</div>
+
+                        <div class="quiz---content--container">
+
+                            <p>Code Reviewlorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        </div>
+
+                        <!-- <div class="quiz---content--container">
+
+                            <p>Code Review: Backface Fliplorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        </div> -->
+                            
+                        <div class="quiz---feedback--container">
+
+                            Complete
+                             <a href="#" id="btn_flip" class="btn btn--flip">&nbsp;</a>
+                             <a href="">Flip</a>
+
+                        </div>
+
+                    </article> 
+
+                    <article class="quiz quiz---code backface">
+
+                        <div class="quiz---icon">&#128211;</div>
+
+                        <div class="quiz---content--container">
+
+                            <p>Code Reviewlorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        </div>
+
+                        <!-- <div class="quiz---content--container">
+
+                            <p>Code Review: Backface Fliplorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                        </div> -->
+                            
+                        <div class="quiz---feedback--container">
+
+                             Complete
+                             <a href="#" id="btn_flip" class="btn btn--flip">&nbsp;</a>
+                             <a href="">Flip</a>
+
+                        </div>
+
+                    </article> 
 
                 </article>
 

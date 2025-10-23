@@ -399,6 +399,7 @@ body {
 
                     section {
 
+                        // Progress Tracker Icons
                         nav.progress---checklist--container {
 
                             ul {
@@ -408,8 +409,8 @@ body {
                                 align-content: center;
                                 justify-content: space-evenly;
                                 width: 95%;
-                                margin: 14px auto;
-                                padding: 4px 0;
+                                margin: 19px auto;
+                                padding: 6px 0;
                                 border-radius: 18px;
                                 background: wheat;                                
                                 min-height: 30px;
@@ -454,7 +455,7 @@ body {
                                 color: red;
                                 border: solid blue 1px;
                                 width: 95%;
-                                font-size: 12px;;
+                                font-size: 12px;
 
                                 div {                                
                                     display: inline-block;
@@ -473,12 +474,18 @@ body {
 
                             background: #fff8a4;
                             padding: 2px;
-                            width: 94%;
+                            width: 480px;
+                            /* width: 94%; */
                             display: block;
                             /* display: flex; */
                             min-height: 120px;
                             height: auto;
                             margin: 15px auto;
+
+                            @media (max-width: $breakpoint---homepage--sm) {
+
+                                width: 94%;
+                            }
 
                             &.flashcard---code {
 
@@ -488,6 +495,7 @@ body {
                             .flashcard---content--container {
 
                                 display: flex;
+                                width: 95%;
 
                                 .flashcard---content,
                                 .flashcard---icon {
@@ -506,12 +514,19 @@ body {
                                     width: 95%;
                                     min-height: 80px;
                                     height: auto;   
+
+                                    .flashcard---inner--content {
+
+                                        width: 55%;
+                                        display: block;
+                                        margin: 0 auto;
+                                        line-height: 1.9;
+                                        text-align: left;
+                                    }
                                 }
 
 
                             }
-
-                           
 
                             .flashcard---status {
 
@@ -558,18 +573,69 @@ body {
             /* color: purple; */
 
             // unique content and selectors
-            .topic---motivation--container {
+            .motivation---page--container {
 
                 /* color: pink; */
                 /* border: solid 1px purple; */
 
-                article {
+                h2 {
 
-                    width: 95%;
+                    text-align: center;
+                }
 
-                    div {
+                #btn---home {
 
+                    display: block;
+                    margin: 0 auto;
+                    color: red;
+                    width: 120px;
+                    text-align: center;
+
+                    transition: color .3s;
+
+                    &:hover {
+
+                        color: blue;
                     }
+
+                }
+
+                div {
+
+                    display: block;
+                    width: 95%;
+                    border: white solid 1px;
+                    margin: 5px auto;
+                    padding: 2px;
+
+                    p {
+
+                        display: block;
+                        width: 50%;
+                        margin: 30pt auto;
+                        line-height: 2;
+                        min-height: 36px;
+                        height: auto;              
+                    }
+                   
+                }
+
+                a#reload_quote {
+
+                    display: block;
+                    margin: 0 auto;
+                    color: red;
+                    width: 120px;
+                    text-align: center;
+
+                    transition: color .3s;
+
+                    &:hover {
+
+                        color: blue;
+                    }
+
+
                 }
             }
 
@@ -586,6 +652,172 @@ body {
 
                 /* color: yellow; */
                 /* border: solid 1px green; */
+
+                  article {
+
+                    // Progress Tracker Icons
+                    nav.progress---checklist--container {
+
+                        ul {
+
+                            /* display: flex; */
+                            align-items: stretch;
+                            align-content: center;
+                            justify-content: space-evenly;
+                            width: 95%;
+                            margin: 14px auto;
+                            padding: 4px 0;
+                            border-radius: 18px;
+                            background: wheat;                                
+                            min-height: 30px;
+                            height: auto;
+
+                            li {
+
+                                display: inline-block;
+                            }
+
+                            li.status---indicator {
+
+                                width: 15px;
+                                height: 15px;
+
+
+                            }
+
+                            li.status---incomplete {
+                                
+                                background: red;
+                                padding: 1px;
+                                border-radius: 50%;
+                                border: #720303 solid 2px;
+                            }
+
+                                li.status---complete {
+
+                                background: #40ff00;
+                                padding: 1px;
+                                border-radius: 50%;
+                                border: #07822e solid 2px;
+
+
+                                }
+                        }
+
+                        .progress---stats--container {
+
+                            text-align: left;
+                            margin: 10px auto;
+                            color: red;
+                            border: solid blue 1px;
+                            width: 95%;
+                            font-size: 12px;;
+
+                            div {                                
+                                display: inline-block;
+                            }
+                        }   
+                        
+                    }
+
+                    h2 {
+
+                        text-align: center;
+                        margin: 15pt 0 0 0;
+                    }
+
+                    .quiz {
+
+                        background: wheat;
+                        margin: 15px auto;
+                        padding: 2px;
+                        width: 50%;
+                    }
+
+                    .quiz,
+                    .quiz---content--container {
+
+                        /* color: red; */
+                        padding: 10px;
+                    }
+
+                    .quiz---icon {
+
+                        width: 100%;
+                        text-align: right;
+                    }
+
+                    .quiz---content--container {
+
+                        .quiz---content {
+
+                            padding: 4px 0;
+
+                        }
+                    }
+
+                    .quiz---buttons--container {
+
+                        .quiz---buttons {
+
+                            a {
+
+                                display: inline-block;
+                                margin: 0 5px;
+                                padding: 5px;
+                                border-radius: 5px;
+                                background: #b33434;
+                                width: 20px;
+                                color: white;
+                                text-decoration: none;
+
+                                transition: background .3s;
+
+                                &:hover {
+
+                                    background: blue;
+                                    background: lighten(#b33434, 10%);
+                                }
+                            }
+                        }
+                    }
+
+                    .quiz---feedback--container {
+
+                        // display: flex;
+                        align-items: stretch;
+                        /* color: blue; */
+                        width: 100%;
+                        text-align: right;
+
+                        a#btn_flip {
+                            display: inline-block; 
+                            width: 15px;                        
+                            height: 15px; 
+                            background: red;
+                            padding: 1px;
+                            border-radius: 50%;
+                            border: #720303 solid 2px;
+                         }
+
+                        p {
+
+                           
+
+
+                            
+                        }
+
+                        .quiz---feedback {
+
+                            text-align: center;
+                            font-weight: bold;
+                            color: red;
+                        }
+
+
+                    }
+                }
             }
         }
 
