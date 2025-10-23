@@ -1,4 +1,4 @@
-/* Last Update: 22-10-2025 16:52 */
+/* Last Update: 23-10-2025 16:52 */
 
 // Config Variables
 
@@ -6,9 +6,11 @@
 
 // $font---main: "Times New Roman", Times, serif;
 $font---main--one: "Times New Roman", Times, serif;
-$font---main--two: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
-$font---main--three: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font---main: $font---main--one;
+$font---main--two: Arial, Helvetica, sans-serif;;
+$font---main--three: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+$font---main--four: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font---main: $font---main--two;
 
 // Colour Variables
 $url---colour--footer: #7199ff;
@@ -24,9 +26,14 @@ $background---body: lightblue;
 
 $background---col--header: greenyellow;
 
+
+// cta button homepage
+$background---btn--homepage: greenyellow;
+$background---btn--homepage-hvr: #d001bb;
+
 // Font Sizes
 
-$font---size--h1: 16px; // main header h1
+$font---size--h1: 28px; // main header h1
 
 $font---size--xlarge: 22pt; // main article homepage
 $font---size--medium: 16px; // main article homepage
@@ -35,4 +42,8 @@ $font---size--small: 14px;
 
 // Media Query Breakpoints
 $breakpoint---homepage--sm: 680px;
+$breakpoint---homepage--xs: 480px;
+
+$breakpoint---sm: 680px;
+$breakpoint---xs: 480px;
 

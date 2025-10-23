@@ -16,10 +16,36 @@ header {
     background: $background---col--header;
     box-shadow: $background---col--header -2px 0px 15px 0px;
 
-    span {
+    @media (max-width: $breakpoint---homepage--sm) {
 
         font-size: $font---size--small;
-        font-style: italic;
+        padding: 9px;
+    }
+
+    h1 {
+
+        font-size: $font---size--h1;
+
+        @media (max-width: $breakpoint---homepage--sm) {
+
+            font-size: 4vw;
+
+        }
+
+    }
+
+    span {
+
+        /* font-size: $font---size--small; */
+        font-weight: bold;
+        font-style: italic;   
+        color: #222222;   
+        
+        @media (max-width: $breakpoint---homepage--xs) {
+
+            font-size: 3vw;
+        }
+        
     }
 }
 
