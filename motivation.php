@@ -52,8 +52,6 @@
             
             <h2>If you need motivation or inspiration...</h2>
 
-           <!--  <a href="index.php" class="btn btn--primary" id="btn---home">Home</a> -->
-
             <div>
 
                 <p>The purpose of this app is to help you learn new skills and concepts. It is designed to be a tool that you can use to learn new things, and to help you keep track of your progress.</p>
@@ -61,7 +59,6 @@
             </div>
 
             <a href="#" class="btn btn--load--quote" id="reload_quote">Load a new quote ></a>
-
 
         </section>
 
