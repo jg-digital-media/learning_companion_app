@@ -115,11 +115,11 @@
                             
                             <div class="quiz---feedback--container">
 
-                                <div class="quiz---feedback">
+                                <div class="quiz---feedback feedback--correct">
                                     <p>Correct!</p>
                                 </div>
 
-                                <div class="quiz---feedback">
+                                <div class="quiz---feedback feedback--incorrect">
                                     <p>Incorrect!</p>
                                 </div>
 
