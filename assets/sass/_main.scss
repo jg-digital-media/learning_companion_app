@@ -276,6 +276,13 @@ body {
                     border: #440404 solid 1px;
                     margin: 5px auto;
                     vertical-align: middle;
+
+                    transition: background .3s;
+
+                    &:hover {
+                    
+                        background: #ffffa8;
+                    }
                 }
 
                 #btn---search {
@@ -638,7 +645,8 @@ body {
 
                             .flashcard---status--container {
 
-                                font-size: 14px;
+                                /* font-size: 14px; */
+                                font-size: 20px;
 
 
                             }
