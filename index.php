@@ -14,7 +14,7 @@
         
         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </article>
 
-        <a href="checklists.php" class="" id="js_enter---website" title="Enter Website">Enter &gt;</a>
+        <a href="cards.php" id="js_enter---website" title="Enter Website" alt="Enter Website">Enter &gt;</a>
 
     </main>
 
