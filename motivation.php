@@ -48,46 +48,21 @@
 
         </section>
 
-        <section class="site---topic--navigation_container">
+        <section class="motivation---page--container">
             
-            <nav class="site---topic--navigation">
+            <h2>If you need motivation or inspiration...</h2>
 
-                <ul>            
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">SCSS</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">JavaScript DOM Scripting,</a></li>
-                    <li><a href="#">PHP,</a></li>
-                    <li><a href="#">WordPress,</a></li>
-                    <li><a href="#">Web Design,</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">Android</a></li>
-                    <li><a href="#">jQuery</a></li>
-                    <li><a href="#">Git</a></li>
-                    <li><a href="#">Node.js</a></li>
-                    <li><a href="#">Structured Query Language</a></li>
-                    <li><a href="#">Connnect to a Database PHP</a></li>
-                </ul>
+           <!--  <a href="index.php" class="btn btn--primary" id="btn---home">Home</a> -->
 
-            </nav>
+            <div>
 
-             <article class="topic---motivation--container">
+                <p>The purpose of this app is to help you learn new skills and concepts. It is designed to be a tool that you can use to learn new things, and to help you keep track of your progress.</p>
 
-                <!-- <h2>HTML</h2> -->
+            </div>
 
-                <article>
-                    
-                    <div>
-                        
-                        <p>motivation content</p>
+            <a href="#" class="btn btn--load--quote" id="reload_quote">Load a new quote ></a>
 
-                    </div>
 
-                </article>
-
-            </article>
-            
         </section>
 
     </main>
