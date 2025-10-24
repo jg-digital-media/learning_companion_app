@@ -182,8 +182,8 @@
                             <div class="flashcard---status--container">
 
                                 <div class="flashcard---status">
-                                    <aside>Complete</aside>
-                                    <span class="status---indicator status---complete">&nbsp;</span>
+                                    <aside>Incomplete</aside>
+                                    <span class="status---indicator status---incomplete">&nbsp;</span>
 
                                 </div>
 
@@ -214,8 +214,8 @@
                             <div class="flashcard---status--container">
 
                                 <div class="flashcard---status">
-                                    <aside>Complete</aside>
-                                    <span class="status---indicator status---complete">&nbsp;</span>
+                                    <aside>Incomplete</aside>
+                                    <span class="status---indicator status---incomplete">&nbsp;</span>
 
                                 </div>
 
