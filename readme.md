@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `22-10-2025 - 17:06`
+Last Updated: `24-10-2025 - 11:04`
 
 ## Sections
 
@@ -11,7 +11,7 @@ Last Updated: `22-10-2025 - 17:06`
 
 ## Tasks 
 
-+ Tasks `26` Completed `10`
++ Tasks `26` Completed `11`
 
 + `COMPLETED: 23-10-2025 ` - Finish Wireframe - concept for app 
 + `COMPLETED: 16-10-2025` - Add a sample set of quotes for the app and store in JSON `data/daily_quotes/quotes.json`
@@ -26,7 +26,7 @@ Last Updated: `22-10-2025 - 17:06`
   + `COMPLETED: 23-10-2025 ` - Build markup for the daily quote `motivation.php`
 + `TODO: ` - Plan Font Stack
 + `TODO: ` - Reset progress tracking on button click
-+ `TODO: ` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
++ `COMPLETED: 24-10-2025 ` - Quiz/Triva Flashcards. - flip cards to see answer.  - Try for flip animations.
 + `TODO: ` - When ready, get an estimate the size in bytes/megabytes if appropriate it'll take to store progress tracking in `.localStorage`. 
 + `TODO: ` - Finalise footer.php template
 + `TODO: ` - `btn---search` span - transition scale on span element when search button is hovered.
