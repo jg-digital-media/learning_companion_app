@@ -1,7 +1,7 @@
 # Learning Companion App
 At its very earliest stages of development. Due for completion in 2026. Check back for updates. 
 
-Last Updated: `24-10-2025 - 11:04`
+Last Updated: `24-10-2025 - 16:20`
 
 ## Sections
 
@@ -80,9 +80,13 @@ Last Updated: `24-10-2025 - 11:04`
 
 + I've made some improvements to the visual style off the app.  I'm now somewhere between feeling like i've taken the UI and UX as far as I can and feeling under the pressure that i've put on myself to get ready to get going on the next stage of the app. 
 
-homepage more or less done but there's still some font stack decisions to be made there.
++ So, when I say "build the markup" in the development notes, readme.md and say it's completed, I'm referring to the initial time building the interface markup. It feels like it's done as a major part of the development. But in truth, these are things that'll inevitably overlap. The homepage more or less done, but there's still some font stack decisions to be made there.
 
-When I say "build the markup" and say it's completed, I'm referring to the initial time building the interface markup
+### `24-10-2025`
+
++ Alongside some UI enhancements, I've prototyped the flippable Triva cards feature as it will appea on the front end. I had to work out some issues along the way where I overclomplicated things. There weere some visual alignment issues in the vertical space because of how I initially had te cardds setup in document flow.  They were stacked with absolute rather than relative positioning which took it out of normal document flow so they were each taking up their own space.  Sorting that out was a challenge.
+
++ After that I moved on to another project; updating the backend data of my Football Score Comparator App and ended the day by making sure things were in order with my project list.  When I get back in action next week, I look forward to finishing my Jobs Pathway App; hopefully getting it tested and ready for deployment.
 
 [Back to Top](#learning-companion-app)
 
