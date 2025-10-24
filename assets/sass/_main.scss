@@ -891,6 +891,70 @@ body {
 
                             width: 100%;
                         }
+
+                        // 3D Flip Card Styles
+                        &.quiz---flipcard {
+                            background: transparent;
+                            border: none;
+                            perspective: 1000px;
+                            min-height: 200px;
+                            height: auto;
+                            box-shadow: none;
+
+                            &:hover {
+                                border: none;
+                            }
+
+                            .quiz---flipcard--inner {
+                                position: relative;
+                                width: 100%;
+                                min-height: 200px;
+                                height: auto;
+                                text-align: center;
+                                transition: transform 0.6s;
+                                transform-style: preserve-3d;
+
+                                &.flipped {
+                                    transform: rotateY(180deg);
+                                }
+                            }
+
+                            .quiz---flipcard--front,
+                            .quiz---flipcard--back {
+                                position: absolute;
+                                width: 100%;
+                                min-height: 200px;
+                                height: auto;
+                                backface-visibility: hidden;
+                                -webkit-backface-visibility: hidden;
+                                background: #fff8a4;
+                                border: solid 3px #fff8a4;
+                                box-shadow: black 0 0 4px 0;
+                                padding: 10px;
+                                border-radius: 4px;
+
+                                transition: border .3s;
+
+                                &:hover {
+                                    border: solid 3px darken(#fff8a4, 18%);
+                                }
+                            }
+
+                            .quiz---flipcard--front {
+                                z-index: 2;
+                                transform: rotateY(0deg);
+                            }
+
+                            .quiz---flipcard--back {
+                                transform: rotateY(180deg);
+                                background: #c8f7ff;
+                                border: solid 3px #c8f7ff;
+
+                                &:hover {
+                                    border: solid 3px darken(#c8f7ff, 18%);
+                                }
+                            }
+                        }
                     }
 
                     // Quiz Type classes: 
@@ -974,6 +1038,13 @@ body {
                             color: red;
                             font-weight: bold;
                             margin: 0 9px;
+                            cursor: pointer;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: darken(red, 10%);
+                                text-decoration: underline;
+                            }
                         }
 
                         .quiz---feedback {
