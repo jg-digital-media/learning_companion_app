@@ -1,4 +1,4 @@
-console.log("app.js connected - 24-10-2025 - 10:26");
+console.log("app.js connected - 24-10-2025 - 11:01");
 
 function openNav() {
 
@@ -21,7 +21,6 @@ function closeNav() {
 
 // Flip Card Functionality
 function flipCard(button) {
-
     // Find the closest quiz card container
     const quizCard = button.closest('.quiz---flipcard');
     
@@ -32,12 +31,7 @@ function flipCard(button) {
             // Toggle the flipped class
             innerCard.classList.toggle('flipped');
             
-            // Update button text based on state
-            if (innerCard.classList.contains('flipped')) {
-                button.textContent = 'Flip Back';
-            } else {
-                button.textContent = 'Flip';
-            }
+        
         }
     }
 }
