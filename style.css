@@ -443,10 +443,22 @@ body main.page---flashcards .topic---flashcards--container article section .flas
 body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---complete {
   background: #40ff00;
   border: #07822e solid 2px;
+  transition: background 0.2s, border 0.2s, transform 0.3s;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---complete:hover {
+  background: red;
+  border: #720203 solid 2px;
+  transform: scale(1.1);
 }
 body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---incomplete {
   background: red;
   border: #720303 solid 2px;
+  transition: background 0.2s, border 0.2s, transform 0.3s;
+}
+body main.page---flashcards .topic---flashcards--container article section .flashcard .status---indicator.status---incomplete:hover {
+  background: #40ff00;
+  border: #07822e solid 2px;
+  transform: scale(1.1);
 }
 body main.page---motivation {
   /* color: purple; */

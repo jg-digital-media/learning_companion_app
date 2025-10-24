@@ -679,12 +679,33 @@ body {
 
                                     background: #40ff00;
                                     border: #07822e solid 2px;
+
+
+                                    transition: background .2s, border .2s, transform .3s;
+
+                                   
+                                    &:hover {
+
+                                        background: red;
+                                        border: #720203 solid 2px;
+                                        transform: scale(1.1);
+                                    }
                                 }
                                 
                                 &.status---incomplete {
 
                                     background: red;
                                     border: #720303 solid 2px;
+
+
+                                    transition: background .2s, border .2s, transform .3s;
+
+                                    &:hover {
+
+                                        background: #40ff00;
+                                        border: #07822e solid 2px;
+                                    transform: scale(1.1);
+                                    }
                                 }
                             }
                             
