@@ -1,4 +1,4 @@
-/* Last Update: 24-10-2025 11:02 */
+/* Last Update: 24-10-2025 11:15 */
 * {
   padding: 0;
   margin: 0;
@@ -596,6 +596,7 @@ body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipca
   min-height: 200px;
   height: auto;
   box-shadow: none;
+  padding: 0;
 }
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard:hover {
   border: none;
@@ -615,6 +616,8 @@ body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipca
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--front,
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--back {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 200px;
   height: auto;
@@ -625,6 +628,7 @@ body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipca
   box-shadow: black 0 0 4px 0;
   padding: 10px;
   border-radius: 4px;
+  box-sizing: border-box;
   transition: border 0.3s;
 }
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--front:hover,
@@ -634,11 +638,13 @@ body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipca
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--front {
   z-index: 2;
   transform: rotateY(0deg);
+  position: relative;
 }
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--back {
   transform: rotateY(180deg);
   background: #c8f7ff;
   border: solid 3px #c8f7ff;
+  position: absolute;
 }
 body main.page---quizzes .topic---quizzes--container article .quiz.quiz---flipcard .quiz---flipcard--back:hover {
   border: solid 3px #6ceaff;
