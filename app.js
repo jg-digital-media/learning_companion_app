@@ -1,4 +1,4 @@
-console.log("app.js connected - 24-10-2025 - 11:01");
+console.log("app.js connected - 28-10-2025 - 16:40");
 
 function openNav() {
 
